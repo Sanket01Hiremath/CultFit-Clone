@@ -1,0 +1,26 @@
+#navbar{
+    display: flex;
+    justify-content: space-evenly;
+    background-color: rgb(71, 71, 71);
+    padding-top: 10px;
+    padding-bottom: 10px;
+    position: sticky;
+    top:0;
+    width:100%;
+}
+#navbar>a{
+    text-decoration: none;
+    color: rgb(211, 211, 211);
+    font-family: sans-serif;
+    font-size: 15px;
+    font-weight: bold;
+}
+#navbar>button{
+    background-color:rgb(105, 105, 105);
+    border:0px;
+    padding:3px 5px;
+    border-radius: 5px;
+    font-family: sans-serif;
+    font-weight: bold;
+    color: white;
+}
