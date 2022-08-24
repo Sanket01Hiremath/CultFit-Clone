@@ -1,0 +1,280 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+#navbar {
+  height: 40px;
+  padding: 20px 50px;
+  background-color: #fff;
+  display: flex;
+  /*  justify-content: space-around; */
+  align-items: center;
+  gap: 30px;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+#logo > div {
+  /* padding: 10px 0px; */
+  width: 135px;
+  height: 35px;
+}
+
+#logo > div > img {
+  width: 100%;
+}
+
+#men,
+#women,
+#smart,
+#outdoor,
+#accessories,
+#nutrition,
+#wellness {
+  font-size: 13px;
+  font-family: sans-serif;
+  color: #262626;
+}
+
+#men_div,
+#women_div,
+#smart_div,
+#outdoor_div,
+#access_div,
+#nutrition_div,
+#wellness_div {
+  display: none;
+  position: absolute;
+  top: 50px;
+  left: 8px;
+  z-index: 1;
+  /* width: 10%; */
+  width: 120px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+#men_div > div,
+#women_div > div,
+#smart_div > div,
+#outdoor_div > div,
+#access_div > div,
+#nutrition_div > div,
+#wellness_div > div {
+  padding: 12px;
+}
+
+#men_div > div:hover,
+#women_div > div:hover,
+#smart_div > div:hover,
+#outdoor_div > div:hover,
+#access_div > div:hover,
+#nutrition_div > div:hover,
+#wellness_div > div:hover {
+  background-color: rgba(128, 128, 128, 0.37);
+}
+
+#men_div > div > a,
+#women_div > div > a,
+#smart_div > div > a,
+#outdoor_div > div > a,
+#access_div > div > a,
+#nutrition_div > div > a,
+#wellness_div > div > a {
+  text-decoration: none;
+  color: #262626;
+  font-size: 14px;
+  font-family: sans-serif;
+  font-weight: 500;
+}
+
+#main-div1:hover #men_div,
+#main-div2:hover #women_div,
+#main-div3:hover #smart_div,
+#main-div4:hover #outdoor_div,
+#main-div5:hover #access_div,
+#main-div6:hover #nutrition_div,
+#main-div7:hover #wellness_div {
+  display: inherit;
+
+  /* left: 10.5%; */
+}
+
+#main-div1,
+#main-div2,
+#main-div3,
+#main-div4,
+#main-div5,
+#main-div6,
+#main-div7 {
+  position: relative;
+  display: inline-block;
+  padding: 20px 10px;
+}
+
+#slideshow {
+  width: 100%;
+  margin-top: 20px;
+}
+
+#slideshow > img {
+  width: 100%;
+}
+
+#bestsellers,
+#just_launched,
+#treadmills,
+#spinbikes {
+  width: 80%;
+  height: auto;
+  margin: auto;
+  margin-top: 70px;
+}
+
+#bestsellers > div > span,
+#just_launched > div > span,
+#treadmills > div > span,
+#spinbikes > div > span {
+  font-size: 30px;
+  color: #333333;
+  font-family: Poppins-Bold, Helvetica Neue, Helvetica, Roboto, Arial,
+    sans-serif;
+  font-weight: 600;
+  font-style: italic;
+}
+
+#bestsellers > div > p,
+#just_launched > div > p {
+  font-size: 25px;
+  font-family: "Inter";
+  font-weight: 600;
+}
+
+#bestsellers > div:first-child,
+#just_launched > div:first-child,
+#treadmills > div:first-child,
+#spinbikes > div:first-child {
+  width: 80%;
+}
+
+#bestsellers,
+#just_launched,
+#treadmills,
+#spinbikes {
+  display: flex;
+}
+
+#left1,
+#right1,
+#left2,
+#right2,
+#left3,
+#right3,
+#left4,
+#right4 {
+  border: none;
+  padding: 15px 20px;
+  border-radius: 55%;
+  font-size: 18px;
+  background-color: white;
+}
+
+#bestsellers_container,
+#jl_container,
+#tread_container,
+#bike_container {
+  width: 80%;
+  height: auto;
+  margin: auto;
+  display: flex;
+  justify-content: left;
+  overflow-x: auto;
+}
+
+#bestsellers_container > div,
+#jl_container > div,
+#tread_container > div,
+#bike_container > div {
+  min-width: 270px;
+  height: auto;
+  position: relative;
+  left: 0;
+  padding-top: 50px;
+  margin-right: 10px;
+  transition: 0.5s;
+}
+
+#bestsellers_container::-webkit-scrollbar,
+#jl_container::-webkit-scrollbar,
+#tread_container::-webkit-scrollbar,
+#bike_container::-webkit-scrollbar {
+  visibility: hidden;
+}
+
+#bestsellers_container > div > img,
+#jl_container > div > img,
+#tread_container > div > img,
+#bike_container > div > img {
+  width: 100%;
+  height: 450px;
+}
+
+#bestsellers_container > div > p,
+#jl_container > div > p,
+#tread_container > div > p,
+#bike_container > div > p {
+  font-size: 18px;
+  font-family: "Inter";
+  font-weight: 600;
+  margin: 14px 0px 0px;
+}
+
+#bestsellers_container > div > h1,
+#jl_container > div > h1,
+#tread_container > div > h1,
+#bike_container > div > h1 {
+  font-size: 20px;
+  margin: 10px 0px 0px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 500;
+}
+
+#bestsellers_container > div > h2,
+#jl_container > div > h2,
+#tread_container > div > h2,
+#bike_container > div > h2 {
+  display: inline-block;
+  font-size: 20px;
+  margin: 12px 10px 12px 0px;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #000000cd;
+}
+
+#bestsellers_container > div > span,
+#jl_container > div > span,
+#tread_container > div > span,
+#bike_container > div > span {
+  display: inline-block;
+  font-size: 18px;
+  font-family: "Inter";
+  font-weight: 600;
+  margin: 14px 0px 0px;
+  text-decoration-line: line-through;
+}
+
+#bestsellers_container > div > button,
+#jl_container > div > button,
+#tread_container > div > button,
+#bike_container > div > button {
+  display: block;
+  width: 50%;
+  height: 40px;
+  margin: auto;
+  margin-top: 10px;
+  background-color: salmon;
+  border: none;
+  border-radius: 25px;
+  color: white;
+  font-size: 14px;
+}
