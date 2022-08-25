@@ -1,0 +1,179 @@
+body{
+    background-color: black;
+}
+/* font classes */
+.gold30{
+    font-size: 30px;
+    font-family: sans-serif;
+    font-weight: bold;
+    color: rgb(243, 184, 34);
+}
+.white25{
+    font-size: 23px;
+    font-family: sans-serif;
+    font-weight: bold;
+    color: rgb(198, 198, 198);
+}
+.white50{
+    font-size: 50px;
+    font-family: sans-serif;
+    font-weight: bold;
+    color: white;
+}
+.grey60{
+    font-size: 60px;
+    font-family: sans-serif;
+    font-weight: bold;
+    color: rgb(200, 200, 200);
+}
+.grey25{
+    font-size: 25px;
+    font-family: sans-serif;
+    color: rgb(195, 195, 195);
+}
+.grey16{
+    font-family: sans-serif;
+    color: rgb(195, 195, 195);
+}
+.white15{
+    font-size: 15px;
+    font-family: sans-serif;
+    color: white;
+    font-weight: bold;
+}
+.grey14{
+    font-size: 14px;
+    font-family: sans-serif;
+    color: rgb(195, 195, 195);
+    font-weight: bold;
+}
+
+/* highlights */
+#highlights{
+    margin: auto;
+    width:100%;
+    display:flex;
+    justify-content: space-between;
+    gap:50px;
+    padding-top: 0px;
+}
+#highlights>div:last-child{
+    width:50%;
+}
+#highlights>div:first-child{
+    margin:20px;
+}
+
+/* Features */
+#features{
+    text-align: center;
+    margin-top: 100px;
+}
+#features>div{
+    display:flex;
+    justify-content: space-evenly;
+}
+#features>div>div,#features>div>div>div{
+    
+    text-align: center;
+    width:33%;
+    height:600px;
+    border-radius: 20px;
+}
+#features>div>div:first-child>div:last-child{
+    background-image: url("https://cdn-images.cure.fit/www-curefit-com/image/upload/c_fill,w_370,q_auto:eco,dpr_1.3125,f_auto,fl_progressive/image/test/glass-card-feature-widget/cult-pass-black/fourth-feature-background-v2.png");
+    background-size: 140%;
+}
+#features>div>div>div{
+    border: 1px solid goldenrod;
+    width:90%;
+    height:45%;
+    margin:20px 20px;
+    background-color: black;
+}
+#features>div>div>div>img{
+    width:250px;
+}
+
+#features>div>div:nth-child(2)>p{
+    position: relative;
+    top:-95%;
+}
+#features>div>div:nth-child(2){
+    height:565px;
+    width:25%;
+    margin-top: 20px;
+    border-radius: 15px;
+    background-color: black;
+    border: 1px solid goldenrod;
+}
+#features>div>div:nth-child(1)>div:nth-child(2)>p{
+    position: relative;
+    top:55%;
+}
+
+/* trainer */
+#trainers{
+    text-align: center;
+    background-image: url("https://cdn-images.cure.fit/www-curefit-com/image/upload/c_fill,w_1200,ar_6.717,q_auto:best,dpr_2,f_auto,fl_progressive//image/test/trainer-carousel/logo/trainers-text-gold-gradient.png");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    width:80%;
+    margin: auto;
+    margin-bottom: 100px;
+}
+#trainers>div{
+    display: flex;
+    justify-content: space-evenly;
+    text-align: center;
+    line-height: 5px;
+}
+#trainers>div>div>img{
+    width:100%;
+}
+
+/* elitepass */
+#elitepass{
+    text-align: center;
+    margin-bottom: 200px;
+    margin-top: 200px;
+}
+#elitepass>div:nth-child(2){
+    display: flex;
+    justify-content: space-evenly;
+    gap:10px;
+    width:60%;
+    margin: auto;
+    text-align: center;
+    line-height: 5px;
+    margin-bottom: 60px;
+    margin-top: 60px;
+}
+#elitepass>div:nth-child(3){
+    display: flex;
+    justify-content: space-evenly;
+    width:90%;
+    margin: auto;
+}
+#elitepass>div:nth-child(3)>div{
+    width:30%;
+    border: 1px solid rgba(255, 255, 255, 0.503);
+    background-image: url("https://cdn-images.cure.fit/www-curefit-com/image/upload/c_fill,w_300,ar_1,q_auto:eco,dpr_1.3125,f_auto,fl_progressive//image/test/gradient-circle/product-theme/cult-pass-gold.png");
+    background-size: 100%;
+    padding:10px;
+    border-radius: 10px;
+}
+#elitepass>div:nth-child(3)>div>div:first-child{
+    border-bottom: 1px solid rgba(255, 255, 255, 0.399);
+    text-align: left;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    line-height: 3px;
+}
+#elitepass>div:nth-child(3)>div>div{
+    margin-bottom: 20px;
+}
+#elitepass>div>div>img{
+    width:80px;
+}
