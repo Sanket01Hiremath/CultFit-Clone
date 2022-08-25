@@ -1,0 +1,58 @@
+#navbar{
+    height: 70px;
+    background-color: black;
+    width: 100%;
+    margin-top: -10px;
+    
+}
+#nav1{
+    background-color: #393A3B;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    width: 100%;
+    color: white;
+    gap: 60px;
+    font-size: 20px;
+}
+#nav1>div{
+    padding: 5px 20px ;
+    border-radius: 7px;
+    font-size: 20px;
+    color: #fff;
+    background-color: #1A1A1E;
+}
+#coursel{
+    cursor: pointer;
+}
+img{
+    width: 100%;
+}
+#container img{
+    height: auto;
+    width: 100%;
+}
+#container {
+    height: auto;
+    width: 80%;
+    margin: auto;
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    grid-template-rows: repeat(5,auto);
+    gap: 20px;
+}
+#container>div{
+    border-radius: 4px;
+    cursor: pointer;
+
+}
+.first-tag {
+    display: flex;
+    justify-content: space-between;
+}
+.second-tag {
+    display: flex;
+    justify-content: space-between;
+}
