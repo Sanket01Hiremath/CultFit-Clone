@@ -460,12 +460,12 @@ right1.onclick = () => {
     if (l == 2) {
       i.style.left = "-1440px";
     }
-    if (l == 3) {
-      i.style.left = "-2220px";
-    }
+    // if (l == 3) {
+    //   i.style.left = "-2220px";
+    // }
 
-    if (l > 3) {
-      l = 3;
+    if (l > 2) {
+      l = 2;
     }
   }
 };
@@ -500,10 +500,10 @@ right2.onclick = () => {
       i.style.left = "0px";
     }
     if (l == 1) {
-      i.style.left = "-740px";
+      i.style.left = "-700px";
     }
     if (l == 2) {
-      i.style.left = "-1440px";
+      i.style.left = "-1400px";
     }
     // if (l == 3) {
     //   i.style.left = "-2220px";
@@ -522,10 +522,10 @@ left2.onclick = () => {
       i.style.left = "0px";
     }
     if (l == 1) {
-      i.style.left = "-740px";
+      i.style.left = "-700px";
     }
     if (l == 2) {
-      i.style.left = "-1440px";
+      i.style.left = "-1400px";
     }
 
     if (l < 0) {

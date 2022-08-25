@@ -26,13 +26,7 @@
   width: 100%;
 }
 
-#men,
-#women,
-#smart,
-#outdoor,
-#accessories,
-#nutrition,
-#wellness {
+.anchor_text {
   font-size: 13px;
   font-family: sans-serif;
   color: #262626;
@@ -129,7 +123,6 @@
   width: 80%;
   height: auto;
   margin: auto;
-  margin-top: 70px;
 }
 
 #bestsellers > div > span,
@@ -184,7 +177,7 @@
 #jl_container,
 #tread_container,
 #bike_container {
-  width: 80%;
+  width: 95%;
   height: auto;
   margin: auto;
   display: flex;
