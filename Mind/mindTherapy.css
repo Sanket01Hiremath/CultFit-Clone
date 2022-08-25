@@ -1,26 +1,29 @@
-#navbar{
-    height: 70px;
-    background-color: black;
-    width: 100%;
-    margin-top: -10px;
-    
-}
+
 #nav1{
+    margin-top: 40px;
+    position: fixed;
+    z-index: 100;
     background-color: #393A3B;
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 50px;
+    height: 40px;
     width: 100%;
     color: white;
     gap: 60px;
     font-size: 20px;
+    margin-bottom: 100px;
 }
 #nav1>div{
     padding: 5px 20px ;
     border-radius: 7px;
 }
+body>img:nth-child(3){
+    margin-top: 40px;
+    width: 100%;
+}
 img{
+    margin-top: 30px;
     width: 100%;
 }
 body>div:nth-child(4){
@@ -55,8 +58,11 @@ body>div:nth-child(5){
     /* border: 2px solid yellow; */
     height: auto;
     border-radius: 15px;
+    margin-top:0px;
 }
 .content>img{
+    margin-top:0px;
+    /* border: 2px solid yellow; */
     border-radius: 15px;
 } 
 .content{
@@ -72,14 +78,14 @@ body>div:nth-child(5){
   }
   .top-head {
     position: absolute;
-    top: 18px;
+    top: 38px;
     left: 16px;
     font-weight: bold;
     font-size:22px ;
   }
   .top-dot {
     position: absolute;
-    top: 40px;
+    top:60px;
     left: 16px;
     color: grey;
     font-weight: bold;
@@ -87,7 +93,7 @@ body>div:nth-child(5){
   }
   .top-des {
     position: absolute;
-    top: 70px;
+    top: 80px;
     left: 16px;
     font-size: 12px;
     font-weight:550;
@@ -96,12 +102,12 @@ body>div:nth-child(5){
   }
   .top-img {
     position: absolute;
-    top: 105px;
+    top: 90px;
     left: 16px;
     font-size: 13px;
   }
   .content>div>img{
-    width: 12%;
+    width: 15%;
   }
   #booknow{
     /* border: 2px solid black; */
@@ -215,16 +221,18 @@ body>div:nth-child(5){
     font-size: 12px;
 }
 #faq{
-    border: 2px solid white;
+    /* border: 2px solid white; */
     height: auto;
     background-color: #171A26;
     color: whitesmoke;
     font-family: 'BrandonTextWeb-Regular';
+    padding-bottom: 50px;
+    margin-bottom: -2px;
 }
 #faq>div:first-child{
     /* border: 2px solid white; */
     margin: auto;
-    margin-top: 40px;
+    padding-top: 60px;
     width: 80%;
     display: flex;
     justify-content: space-between;
@@ -276,47 +284,167 @@ body>div:nth-child(5){
     font-family: Inter-Medium,Helvetica Neue,Helvetica,Roboto,Arial,sans-serif;
     font-size: 22px;
 }
+#description{
+    /* border: 2px solid white; */
+    height:auto;
+    background-color: #171A26;
+}
+#descript{
+    /* border: 2px solid yellow; */
+    height : 200;
+    width: 80%;
+    margin: auto;
+    color: whitesmoke;
+    font-family: 'BrandonTextWeb-Regular';
+    display: flex;
+    gap: 20px;
+    justify-content: space-between;
+    padding-bottom: 60px;
+}
+#descript>div{
+    /* border: 2px solid rgb(211, 115, 24); */
+    width:48%;
+    padding: 0px 20px;
+}
+#left>div, #right>div{
+    /* border: 2px solid white; */
+    margin-top: 20px;
+    text-align: left;
+    color: rgb(255 255 255 / 30%);
+    font-size: 14px;
+    font-family: Inter-Regular,Helvetica Neue,Helvetica,Roboto,Arial,sans-serif;
+    letter-spacing: 0.5px;
+    line-height: 22px;
+}
+#left>.clr,#right>.clr{
+    color: rgb(255 255 255 / 80%);
+}
+
+
 @media all and (min-width : 481px) and (max-width : 768px){
+    #navbar, #nav1, img:nth-child(3){
+        width:180%;
+    }
+    div:nth-child(4)>img{
+        width:180%;
+        margin:auto;
+        margin-left: 20px;
+    }
     body>div:nth-child(5){
-        font-size: 18px;
+        padding-left: 50px;
+        padding-bottom: 30px;
+        font-size: 20px;
     }
     .top-head {
         top:10px;
-        font-size: 18px;
+        font-size: 24px;
     }
     .top-des {
-        top:30px;
-        font-size: 10px;
-        line-height: 1;
+        top:60px;
+        font-size: 18px;
+        line-height: 1.3;
     }
     .top-img {
-        font-size: 9px;
-        top:65px;
+        font-size: 18px;
+        top:120px;
     }
     .bottom-left {
-        font-size: 12px;
-        bottom:5px;
+        font-size: 24px;
+        bottom:30px;
+    }
+    #expertise{
+        margin:auto;
+        padding-left:15%;
+        height:auto;
+        gap:20px;
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        grid-template-rows: repeat(8,1fr);
+        width:150%
+    }
+    #booknow{
+        width: 150%;
+        margin-left: 70px;
+    }
+    #consultation{
+        width:180%; 
+    }
+    #section{
+        width:100%;
+        gap:20px;
+        margin:auto;
+        margin-left: 10%;
+        margin-top:50px;
+    }
+    img:nth-child(9),img:nth-child(10),img:nth-child(11){
+        width:180%
+    }
+    #faq{
+        width : 180%;
+    }
+    #description{
+        width:180%;
     }
 }
 @media all and (min-width : 320px) and (max-width : 480px){
+    #navbar, #nav1, img:nth-child(3){
+        width:180%;
+    }
+    div:nth-child(4)>img{
+        width:180%;
+        margin:auto;
+        margin-left: 0px;
+    }
     body>div:nth-child(5){
-        font-size: 22px;
+        padding-left: 10px;
+        padding-bottom: 10px;
+        font-size: 20px;
+    }
+    #expertise{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        grid-template-rows: repeat(8,1fr);
+        margin-left: 5%;
+        width:140%
     }
     .top-head {
         top:10px;
-        font-size: 18px;
+        font-size: 24px;
     }
     .top-des {
-        top:30px;
-        font-size: 10px;
+        top:50px;
+        font-size: 16px;
         line-height: 1;
     }
     .top-img {
-        top:65px;
-        font-size: 9px;
+        top:95px;
+        font-size: 16px;
     }
     .bottom-left {
-        font-size: 12px;
-        bottom:5px;
+        font-size: 20px;
+        bottom:15px;
+    }
+    #booknow{
+        width: 130%;
+        margin-left: 70px;
+    }
+    #consultation{
+        width:170%; 
+    }
+    #section{
+        width:100%;
+        gap:20px;
+        margin:auto;
+        margin-left: 2%;
+        margin-top:50px;
+    }
+    img:nth-child(9),img:nth-child(10),img:nth-child(11){
+        width:170%
+    }
+    #faq{
+        width : 170%;
+    }
+    #description{
+        width:170%;
     }
 }
