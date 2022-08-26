@@ -39,6 +39,7 @@
 #access_div,
 #nutrition_div,
 #wellness_div {
+  background-color: white;
   display: none;
   position: absolute;
   top: 50px;
@@ -164,4 +165,9 @@
   border-radius: 25px;
   color: white;
   font-size: 14px;
+}
+
+#slideshow {
+  width: 90%;
+  margin: auto;
 }

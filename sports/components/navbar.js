@@ -22,14 +22,14 @@ function navbar() {
   <h3 class="anchor_text">Women Sportswear</h3>
   <div id="women_div">
     <div id="tshirt">
-      <a href="#">T-shirts</a>
+      <a href="./wtshirts.html">T-shirts</a>
     </div>
-    <div id="bra"><a href="#">Sports Bra</a></div>
-    <div id="tights"><a href="#">Tights</a></div>
-    <div id="short"><a href="#">Shorts</a></div>
-    <div id="joggers"><a href="#">Joggers</a></div>
-    <div id="jacket"><a href="#">Jackets</a></div>
-    <div id="footwears"><a href="#">Footwear</a></div>
+    <div id="bra"><a href="./bra.html">Sports Bra</a></div>
+    <div id="tights"><a href="./tights.html">Tights</a></div>
+    <div id="short"><a href="./wshorts.html">Shorts</a></div>
+    <div id="joggers"><a href="./wjoggers.html">Joggers</a></div>
+    <div id="jacket"><a href="./wjackets.html">Jackets</a></div>
+    <div id="footwears"><a href="./wfootwear.html">Footwear</a></div>
   </div>
 </div>
 <div style="margin-top: 5px" id="main-div3">
