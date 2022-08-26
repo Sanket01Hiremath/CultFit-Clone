@@ -6,10 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>care</title>
     <link rel="stylesheet" href="care.css">
+    <link rel="stylesheet" href="../Day1/styles/navbar.css">
 
 </head>
 <body>
-    <div id="navbar"></div>
+    <div id="stickynavbar"></div>
     <div id="nav1">
         <div>Lab Tests</div>
     </div>
@@ -328,5 +329,10 @@
     </div>
     
 </body>
+<script type="module">
+    import {nav1} from '../modules/navbar.js';
+    console.log(nav1)
+    document.getElementById("stickynavbar").innerHTML=nav1();
+</script>
 </html>
 <script src="care.js"></script>

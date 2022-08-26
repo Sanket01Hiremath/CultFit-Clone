@@ -11,14 +11,7 @@
 <body>
     <!-- NavBars -->
     <div id="stickynavbar"></div>
-    <div id="navbar">
-        <a href="/">cultpass ELITE</a>
-        <a href="/">cultpass PRO</a>
-        <a href="/">cultpass LIVE</a>
-        <a href="/">cult Transform</a>
-        <a href="/">Luxuary Gym</a>
-        <button>COMPARE PLANS</button>
-    </div>
+    <div id="navbar"></div>
 
     <!-- Top image with cultpass details -->
     <div id="part_1">
@@ -53,17 +46,17 @@
                 <p>------- Ends In -------</p>
                 <div>
                     <div>
-                        <h2>10</h2>
+                        <h2 id="hrs">10</h2>
                         <p>Hrs</p>
                     </div>
                     <h2>:</h2>
                     <div>
-                        <h2>10</h2>
+                        <h2 id="min">10</h2>
                         <p>Mins</p>
                     </div>
                     <h2>:</h2>
                     <div>
-                        <h2>10</h2>
+                        <h2 id="sec">10</h2>
                         <p>Sec</p>
                     </div>
                 </div>
@@ -361,4 +354,11 @@
         </div>
     </div>
 </body>
+<script type="module">
+    import {nav1,nav2} from '../modules/navbar.js';
+    console.log(nav1,nav2)
+    document.getElementById("stickynavbar").innerHTML=nav1();
+    document.getElementById("navbar").innerHTML=nav2();
+</script>
+<script src="../test/timer.js"></script>
 </html>

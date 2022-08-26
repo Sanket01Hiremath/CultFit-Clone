@@ -11,14 +11,8 @@
     <link rel="stylesheet" href="./styles/culttransform.css">
 </head>
 <body>
-    <div id="stickyNavbar"></div>
-    <div id="navbar">
-        <a  href="../Day2/Elitepass.html">cultpass ELITE</a>
-        <a  href="../Day2/Propass.html">cultpass PRO</a>
-        <a href="../Day3/Livepass.html">cultpass LIVE</a>
-        <a class="present" href="/">cult Transform</a>
-        <a href="../Day3/LuxuaryGyms.html">Luxuary Gym</a>
-    </div>
+    <div id="stickynavbar"></div>
+    <div id="navbar"></div>
 
     <!-- top section -->
     <div id="highlights">
@@ -173,6 +167,9 @@
 
 </body>
 <script type="module">
-
+    import {nav1,nav2} from '../modules/navbar.js';
+    console.log(nav1,nav2)
+    document.getElementById("stickynavbar").innerHTML=nav1();
+    document.getElementById("navbar").innerHTML=nav2();
 </script>
 </html>

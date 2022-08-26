@@ -1,7 +1,10 @@
 body{
     background-color: rgb(4, 4, 10);
 }
-
+html{
+    margin: -8px;
+    overflow-x: hidden;
+}
 
 #part_1{
     background-image: url("https://cdn-images.cure.fit/www-curefit-com/image/upload/c_fill,w_1600,ar_1.67,q_auto:eco,dpr_2,f_auto,fl_progressive/image/vm/9f3c54d5-d01f-457d-a29f-59f04d78cc48.png");

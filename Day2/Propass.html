@@ -8,39 +8,11 @@
     <link rel="stylesheet" href="./styles/Elitepass.css">
     <link rel="stylesheet" href="../Day1/styles/fitness.css">
     <link rel="stylesheet" href="../Day1/styles/navbar.css">
-    <style>
-        #carousel>div{
-            background-color: rgb(115, 115, 115);
-        }
-        .present{
-            background-color: rgba(146, 146, 146, 0.642);
-            padding: 5px;
-            border-radius: 5px;
-        }
-        #features>div>div>div{
-            border: 1px solid silver;
-        }
-        #features>div>div:nth-child(2){
-            border: 1px solid silver;
-        }
-        #features>div>div:first-child>div:last-child{
-            background-image: url("https://cdn-images.cure.fit/www-curefit-com/image/upload/c_fill,w_370,q_auto:eco,dpr_1.3125,f_auto,fl_progressive/image/test/glass-card-feature-widget/cult-pass-gold/fourth-feature-background-v3.png");
-        }
-        #elitepass>div:nth-child(3)>div{
-            background-image: url("https://cdn-images.cure.fit/www-curefit-com/image/upload/c_fill,w_300,ar_1,q_auto:eco,dpr_1.3125,f_auto,fl_progressive//image/test/gradient-circle/product-theme/cult-pass-black.png");
-        }
-    </style>
+    <link rel="stylesheet" href="../Day2/styles/propass.css">
 </head>
 <body>
-    <div id="stickyNavbar"></div>
-    <div id="navbar">
-        <a  href="/">cultpass ELITE</a>
-        <a class="present" href="/">cultpass PRO</a>
-        <a href="/">cultpass LIVE</a>
-        <a href="/">cult Transform</a>
-        <a href="/">Luxuary Gym</a>
-        <button>COMPARE PLANS</button>
-    </div>
+    <div id="stickynavbar"></div>
+    <div id="navbar"></div>
 
     <!-- top section -->
     <div id="highlights">
@@ -72,17 +44,17 @@
                 <p>------- Ends In -------</p>
                 <div>
                     <div>
-                        <h2>10</h2>
+                        <h2 id="hrs">10</h2>
                         <p>Hrs</p>
                     </div>
                     <h2>:</h2>
                     <div>
-                        <h2>10</h2>
+                        <h2 id="min">10</h2>
                         <p>Mins</p>
                     </div>
                     <h2>:</h2>
                     <div>
-                        <h2>10</h2>
+                        <h2 id="sec">10</h2>
                         <p>Sec</p>
                     </div>
                 </div>
@@ -388,6 +360,10 @@
 
 </body>
 <script type="module">
-
+    import {nav1,nav2} from '../modules/navbar.js';
+    console.log(nav1,nav2)
+    document.getElementById("stickynavbar").innerHTML=nav1();
+    document.getElementById("navbar").innerHTML=nav2();
 </script>
+<script src="../test/timer.js"></script>
 </html>

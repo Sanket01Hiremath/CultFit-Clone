@@ -15,6 +15,8 @@
     color: white;
     gap: 60px;
     font-size: 20px;
+    position: sticky;
+    top: 0px;
 }
 #nav1>div{
     padding: 5px 20px ;

@@ -1,0 +1,20 @@
+#carousel>div{
+    background-color: rgb(115, 115, 115);
+}
+.present{
+    background-color: rgba(146, 146, 146, 0.642);
+    padding: 5px;
+    border-radius: 5px;
+}
+#features>div>div>div{
+    border: 1px solid silver;
+}
+#features>div>div:nth-child(2){
+    border: 1px solid silver;
+}
+#features>div>div:first-child>div:last-child{
+    background-image: url("https://cdn-images.cure.fit/www-curefit-com/image/upload/c_fill,w_370,q_auto:eco,dpr_1.3125,f_auto,fl_progressive/image/test/glass-card-feature-widget/cult-pass-gold/fourth-feature-background-v3.png");
+}
+#elitepass>div:nth-child(3)>div{
+    background-image: url("https://cdn-images.cure.fit/www-curefit-com/image/upload/c_fill,w_300,ar_1,q_auto:eco,dpr_1.3125,f_auto,fl_progressive//image/test/gradient-circle/product-theme/cult-pass-black.png");
+}
