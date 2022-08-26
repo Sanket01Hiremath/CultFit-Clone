@@ -1,0 +1,139 @@
+#navbar_container {
+  width: 98%;
+  margin: auto;
+}
+nav {
+  width: 98%;
+  margin: auto;
+  padding: 15px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+}
+
+#logo_container {
+  width: 120px;
+  min-height: fit-content;
+  display: flex;
+  align-content: center;
+  cursor: pointer;
+}
+
+#logo_container > img {
+  width: 100%;
+}
+
+/* links-start */
+#links {
+  width: 30%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-left: 100px;
+  cursor: pointer;
+  font-family: "Inter-Bold", "Roboto", sans-serif;
+}
+
+#links > a {
+  text-decoration: none;
+  color: rgb(255 255 255 / 60%);
+  font-weight: 500;
+  font-size: 22px;
+  line-height: 22px;
+}
+
+#links > a:hover {
+  color: rgba(255, 255, 255, 0.781);
+}
+/* links-end */
+
+#left_end {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 25%;
+}
+
+#search_box {
+  width: 35%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  padding: 7px 10px;
+  border-radius: 5px;
+}
+#search_box:hover {
+  background: rgb(255 255 255 / 10%);
+}
+
+#search_box > p {
+  width: 65%;
+  border: none;
+  font-size: 14px;
+  color: rgb(255 255 255 / 60%);
+  letter-spacing: 0.5px;
+
+  margin-right: 10px;
+}
+
+#search_logo {
+  width: 25%;
+}
+
+#search_logo > img {
+  width: 100%;
+}
+
+#search_box {
+  display: flex;
+}
+
+#search_logo > img {
+  width: 100%;
+}
+
+#user_cart {
+  display: flex;
+  align-items: center;
+}
+
+#get_app {
+  background: transparent;
+  color: rgba(255, 255, 255, 0.75);
+  font-weight: 500;
+  padding: 10px 15px;
+  border: 2px solid rgba(255, 255, 255, 0.75);
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#get_app:hover {
+  border: 2px solid rgba(255, 255, 255, 0.5);
+}
+
+#user_logo_out,
+#cart_logo_out {
+  width: 50%;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+#user_logo,
+#cart_logo {
+  width: 60%;
+  padding: 9px 3px;
+}
+#user_logo_out:hover,
+#cart_logo_out:hover {
+  background: rgb(255 255 255 / 10%);
+}
+
+#user_logo > img,
+#cart_logo > img {
+  width: 100%;
+}
