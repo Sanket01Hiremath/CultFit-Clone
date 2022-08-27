@@ -13,7 +13,7 @@
   gap: 30px;
   position: sticky;
   top: 0;
-  z-index: 1;
+  z-index: 10;
 }
 
 #logo > div {
@@ -42,7 +42,7 @@
   background-color: white;
   display: none;
   position: absolute;
-  top: 50px;
+  top: 60px;
   left: 8px;
   z-index: 1;
   /* width: 10%; */
@@ -58,6 +58,11 @@
 #nutrition_div > div,
 #wellness_div > div {
   padding: 12px;
+}
+
+#access_div,
+#nutrition_div {
+  top: 55px;
 }
 
 #men_div > div:hover,
@@ -130,6 +135,7 @@
   width: 80%;
   height: auto;
   margin: auto;
+  z-index: -1;
 }
 
 #bestsellers > div > span,
@@ -141,6 +147,7 @@
 #topwear > div > span,
 #bottomwear > div > span,
 #health > div > span {
+  z-index: -1;
   font-size: 30px;
   color: #333333;
   font-family: Poppins-Bold, Helvetica Neue, Helvetica, Roboto, Arial,
@@ -156,6 +163,7 @@
 #topwear > div > p,
 #bottomwear > div > p,
 #health > div > p {
+  z-index: -1;
   font-size: 25px;
   font-family: "Inter";
   font-weight: 600;
@@ -171,6 +179,7 @@
 #bottomwear > div:first-child,
 #health > div:first-child {
   width: 80%;
+  z-index: -1;
 }
 
 #bestsellers,
@@ -182,6 +191,7 @@
 #topwear,
 #bottomwear,
 #health {
+  z-index: -1;
   display: flex;
 }
 
@@ -223,6 +233,7 @@
   height: auto;
   margin: auto;
   display: flex;
+  z-index: -1;
   justify-content: left;
   overflow-x: auto;
 }
@@ -236,6 +247,7 @@
 #top_container > div,
 #bottom_container > div,
 #health_container > div {
+  z-index: -1;
   min-width: 270px;
   height: auto;
   position: relative;
@@ -549,4 +561,164 @@ hr {
     margin: auto;
     margin-left: 150px;
   }
+}
+
+#login > i,
+#cart1 > i {
+  color: black;
+}
+
+#logindiv {
+  transition: step-start;
+  display: none;
+  background-color: rgba(0, 0, 0);
+  position: absolute;
+  top: 100%;
+  left: 35%;
+  width: 28%;
+  margin: auto;
+  z-index: 5;
+  height: 500px;
+  border: 1px solid black;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  border-radius: 10px;
+  padding-bottom: 80px;
+}
+
+#loginlogo {
+  width: 35%;
+  margin: auto;
+  margin-top: 20px;
+}
+
+#loginlogo > img {
+  width: 100%;
+}
+
+#cross > div > i {
+  color: white;
+}
+
+#cross > div {
+  display: flex;
+  justify-content: flex-end;
+  margin-right: -20px;
+}
+
+#form {
+  width: 80%;
+  margin: auto;
+  margin-top: 70px;
+}
+
+#mobile {
+  display: block;
+  width: 100%;
+  height: 40px;
+  border: none;
+  border-radius: 5px;
+  background-color: black;
+  color: white;
+  margin-bottom: 40px;
+  padding-left: 20px;
+  font-size: 18px;
+}
+
+#sub {
+  display: block;
+  width: 80%;
+  height: 40px;
+  margin: auto;
+  text-align: center;
+  font-size: 18px;
+  border-radius: 10px;
+  background-color: grey;
+  color: white;
+}
+
+#google {
+  border: 1px solid grey;
+  width: 80%;
+  height: 50px;
+  margin: auto;
+  margin-top: 20px;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  padding-left: 20px;
+}
+
+#google > div {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+
+#google > div > p {
+  display: inline-block;
+  font-family: sans-serif;
+  font-size: 16px;
+  color: grey;
+}
+
+.fa-envelope,
+.fa-google {
+  color: white;
+}
+
+#terms {
+  color: white;
+  margin-top: 20px;
+  margin-left: 20px;
+  font-family: sans-serif;
+}
+
+#cartdiv {
+  display: none;
+  width: 300px;
+  border: 1px solid whitesmoke;
+  height: 800px;
+  position: absolute;
+  right: 0;
+  top: 80px;
+  z-index: 0;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+
+#cartdiv > div {
+  width: 100%;
+  display: flex;
+  gap: 20px;
+}
+
+#cartdiv > div {
+  width: 80%;
+}
+
+#cartdiv > div > div > img {
+  width: 100%;
+}
+
+#cartdiv > div > div > p:first-child {
+  font-size: 18px;
+  font-family: sans-serif;
+}
+
+#cartdiv > div > div > p:last-child {
+  font-size: 16px;
+  font-family: sans-serif;
+  margin-top: 20px;
+}
+
+#cartdiv button {
+  position: absolute;
+  bottom: 0;
+  left: 30%;
+  width: 150px;
+  height: 40px;
+  background-color: salmon;
+  border: none;
+  border-radius: 20px;
 }

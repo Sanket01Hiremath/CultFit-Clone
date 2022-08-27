@@ -1,3 +1,5 @@
+let cartArr = JSON.parse(localStorage.getItem("cart")) || [];
+
 import navbar from "/dusty-hat-6390/sports/components/navbar.js";
 let navbarcont = document.getElementById("navbar");
 navbarcont.innerHTML = navbar();
@@ -35,14 +37,7 @@ function slideshow(slideshowArr) {
 
 slideshow(slideshowArr);
 
-let cartArr = JSON.parse(localStorage.getItem("cart")) || [];
-
-function cartfun(ele) {
-  cartArr.push(ele);
-  localStorage.setItem("cart", JSON.stringify(cartArr));
-}
-
-var bestsellers = [
+var bestsellersArr = [
   {
     Image:
       "https://cdn-images.cure.fit/www-curefit-com/image/upload/fl_progressive,f_auto,q_auto:eco,w_300,h_400,ar_0.75,c_fill/dpr_2/cultgear-content/SDgpHbPyumHJkqeM5ehAh6Gh",
@@ -158,7 +153,7 @@ var bestsellers = [
   },
 ];
 
-var just = [
+var justArr = [
   {
     Image:
       "https://cdn-images.cure.fit/www-curefit-com/image/upload/fl_progressive,f_auto,q_auto:eco,w_300,h_400,ar_0.75,c_fill/dpr_2/cultgear-content/2dioFsRcvQ8uu43WTe8zRqzc",
@@ -233,7 +228,7 @@ var just = [
   },
 ];
 
-var treadmills = [
+var treadmillsArr = [
   {
     Image:
       "https://cdn-images.cure.fit/www-curefit-com/image/upload/fl_progressive,f_auto,q_auto:eco,w_300,h_400,ar_0.75,c_fill/dpr_2/cultgear-content/SDgpHbPyumHJkqeM5ehAh6Gh",
@@ -310,7 +305,7 @@ var treadmills = [
   },
 ];
 
-var bikes = [
+var bikesArr = [
   {
     Image:
       "https://cdn-images.cure.fit/www-curefit-com/image/upload/fl_progressive,f_auto,q_auto:eco,w_300,h_400,ar_0.75,c_fill/dpr_2/cultgear-content/nTvMdcZi5B2MzrXZJicv7acr",
@@ -410,7 +405,7 @@ var bikes = [
   },
 ];
 
-var cycles = [
+var cyclesArr = [
   {
     Image:
       "https://cdn-images.cure.fit/www-curefit-com/image/upload/fl_progressive,f_auto,q_auto:eco,w_300,h_400,ar_0.75,c_fill/dpr_2/cultgear-content/ZJBYsrvTZKUc9QzYK6fh4f8n",
@@ -488,7 +483,7 @@ var cycles = [
   },
 ];
 
-var accessories = [
+var accessoriesArr = [
   {
     Image:
       "https://cdn-images.cure.fit/www-curefit-com/image/upload/fl_progressive,f_auto,q_auto:eco,w_300,h_400,ar_0.75,c_fill/dpr_2/cultgear-content/rqFrmhQat5ajC62f7rKCPU6m",
@@ -564,7 +559,7 @@ var accessories = [
   },
 ];
 
-var topwear = [
+var topwearArr = [
   {
     Image:
       "https://cdn-images.cure.fit/www-curefit-com/image/upload/fl_progressive,f_auto,q_auto:eco,w_300,h_400,ar_0.75,c_fill/dpr_2/cultgear-content/mU1dZAHqT6pjRn55ZWYvq6Mf",
@@ -638,7 +633,7 @@ var topwear = [
   // },
 ];
 
-var bottomwear = [
+var bottomwearArr = [
   {
     Image:
       "https://cdn-images.cure.fit/www-curefit-com/image/upload/fl_progressive,f_auto,q_auto:eco,w_300,h_400,ar_0.75,c_fill/dpr_2/cultgear-content/SZqR84jvT6wbiardp2g2jfA5",
@@ -713,7 +708,7 @@ var bottomwear = [
   },
 ];
 
-var health = [
+var healthArr = [
   {
     Image:
       "https://cdn-images.cure.fit/www-curefit-com/image/upload/fl_progressive,f_auto,q_auto:eco,w_300,h_400,ar_0.75,c_fill/dpr_2/cultgear-content/DHjJcDyA9cmpAJqFt954L5kB",
@@ -802,9 +797,10 @@ let topcont = document.getElementById("top_container");
 let bottomcont = document.getElementById("bottom_container");
 let healthcont = document.getElementById("health_container");
 
-function append(data, container) {
+function append(data, acontainer) {
+  // acontainer.innerHTML = "";
   data.forEach((ele) => {
-    let div = document.createElement("div");
+    let div1 = document.createElement("div");
 
     let image = document.createElement("img");
     image.src = ele.Image;
@@ -821,26 +817,25 @@ function append(data, container) {
     let strikethrough = document.createElement("span");
     strikethrough.innerText = ele.strikethrough;
 
-    let cart = document.createElement("button");
-    cart.innerText = "Add to Cart";
-    cart.onclick = () => {
-      cartfun(ele);
-    };
-
-    div.append(image, company, title, price, strikethrough, cart);
-    container.append(div);
+    div1.append(image, company, title, price, strikethrough);
+    acontainer.append(div1);
   });
 }
 
-append(bestsellers, bestcont);
-append(just, jlcont);
-append(treadmills, treadcont);
-append(bikes, bikecont);
-append(cycles, cyclecont);
-append(accessories, accesscont);
-append(topwear, topcont);
-append(bottomwear, bottomcont);
-append(health, healthcont);
+append(bestsellersArr, bestcont);
+append(justArr, jlcont);
+append(treadmillsArr, treadcont);
+append(bikesArr, bikecont);
+append(cyclesArr, cyclecont);
+append(accessoriesArr, accesscont);
+append(topwearArr, topcont);
+append(bottomwearArr, bottomcont);
+append(healthArr, healthcont);
+
+function cartfun(ele) {
+  cartArr.push(ele);
+  localStorage.setItem("cart", JSON.stringify(cartArr));
+}
 
 var left1 = document.getElementById("left1");
 var right1 = document.getElementById("right1");
@@ -1248,12 +1243,147 @@ left9.onclick = () => {
 };
 
 let accBtn = document.getElementsByClassName("fa-angle-down");
-let down1 = document.getElementById("down1");
+let que1 = false;
+let que2 = false;
 // console.log(accBtn);
 accBtn[0].onclick = () => {
-  document.getElementById("acc_cont1").style.display = "inherit";
+  if (que1 == false) {
+    que1 = true;
+    document.getElementById("acc_cont1").style.display = "inherit";
+    accBtn[0].style.transform = "rotate(180deg)";
+  } else {
+    que1 = false;
+    document.getElementById("acc_cont1").style.display = "none";
+    accBtn[0].style.transform = "rotate(360deg)";
+  }
 };
 
 accBtn[1].onclick = () => {
-  document.getElementById("acc_cont2").style.display = "inherit";
+  if (que2 == false) {
+    que2 = true;
+    document.getElementById("acc_cont2").style.display = "inherit";
+    accBtn[1].style.transform = "rotate(180deg)";
+  } else {
+    que2 = false;
+    document.getElementById("acc_cont2").style.display = "none";
+    accBtn[1].style.transform = "rotate(360deg)";
+  }
+};
+
+let loginBtn = document.getElementById("login");
+loginBtn.addEventListener("click", () => {
+  document.getElementById("logindiv").style.display = "inherit";
+});
+
+let crossBtn = document.getElementById("cross");
+crossBtn.addEventListener("click", () => {
+  document.getElementById("logindiv").style.display = "none";
+});
+
+let submit = document.getElementById("sub");
+let mobileinput = document.getElementById("mobile");
+submit.addEventListener("click", otp);
+
+function otp(e) {
+  e.preventDefault();
+  if (mobile.value == "") {
+    alert("required field");
+    return;
+  }
+  document.getElementById("logindiv").innerHTML = "";
+
+  let div1 = document.createElement("div");
+  div1.style.marginTop = "20px";
+  div1.style.marginLeft = "20px";
+
+  let h1 = document.createElement("h1");
+  h1.innerText = "Enter OTP";
+  h1.style.fontFamily = "sans-serif";
+  h1.style.fontSize = "1.5em";
+  h1.style.color = "white";
+
+  div1.appendChild(h1);
+
+  let div2 = document.createElement("div");
+  div2.style.width = "80%";
+  div2.style.margin = "auto";
+  div2.style.marginTop = "50px";
+
+  let otpins = document.createElement("p");
+  otpins.innerText =
+    "Please enter the code we just sent to your number to proceed, enter 1234";
+  otpins.style.color = "white";
+  otpins.style.fontSize = "20px";
+  otpins.style.fontFamily = "sans-serif";
+
+  let otp = document.createElement("input");
+  otp.type = "text";
+  otp.style.display = "block";
+  otp.style.width = "60%";
+  otp.style.height = "40px";
+  otp.style.margin = "auto";
+  otp.style.marginTop = "50px";
+  otp.style.borderRadius = "10px";
+  otp.style.fontFamily = "sans-serif";
+  otp.style.fontSize = "20px";
+  otp.style.padding = "0 10px";
+
+  let submit = document.createElement("button");
+  submit.innerText = "Submit";
+  submit.style.display = "block";
+  submit.style.width = "40%";
+  submit.style.height = "40px";
+  submit.style.margin = "auto";
+  submit.style.marginTop = "50px";
+  submit.style.borderRadius = "5px";
+
+  submit.addEventListener("click", () => {
+    if (otp.value == "1234") {
+      alert("Login Success");
+      window.location.reload();
+    }
+  });
+
+  div2.append(otpins);
+  document.getElementById("logindiv").append(div1, div2, otp, submit);
+}
+
+let cartBtn = document.getElementById("cart1");
+cartBtn.addEventListener("click", () => {
+  document.getElementById("cartdiv").style.display = "inherit";
+});
+
+let cartdiv = document.getElementById("cartdiv");
+
+function appendCart(cartArr) {
+  // cartdiv.innerHTML = "";
+
+  cartArr.forEach((ele) => {
+    let cartCont = document.createElement("div");
+
+    let div = document.createElement("div");
+
+    let div2 = document.createElement("div");
+
+    let image = document.createElement("img");
+    image.src = ele.Image;
+
+    let title = document.createElement("p");
+    title.innerText = ele.title;
+
+    let price = document.createElement("p");
+    price.innerText = ele.price;
+
+    div.append(image);
+    div2.append(title, price);
+    cartCont.append(div, div2);
+    cartdiv.append(cartCont);
+  });
+}
+
+appendCart(cartArr);
+
+let checkout = document.querySelector("#cartdiv>button");
+checkout.onclick = () => {
+  window.location.href = "checkout.html";
 };

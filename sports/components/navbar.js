@@ -84,7 +84,9 @@ function navbar() {
     <div id="skin-disorders"><a href="#">Skin Disporders</a></div>
     <div id="lip-care"><a href="#">Lip Care</a></div>
   </div>
-</div>`;
+</div>
+<div id="login"><i class="fa-solid fa-circle-user"></i></div>
+<div id="cart1"><i class="fa-solid fa-cart-arrow-down"></i></div>`;
 }
 
 export default navbar;

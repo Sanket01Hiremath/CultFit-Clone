@@ -42,12 +42,17 @@
   background-color: white;
   display: none;
   position: absolute;
-  top: 50px;
+  top: 60px;
   left: 8px;
   /* z-index: 1; */
   /* width: 10%; */
   width: 120px;
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+#access_div,
+#nutrition_div {
+  top: 55px;
 }
 
 #men_div > div,
@@ -207,4 +212,10 @@
   #slideshow {
     width: 100%;
   }
+}
+
+#login > i,
+#cart > i {
+  color: black;
+  font-size: 20px;
 }
