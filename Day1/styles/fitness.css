@@ -1,3 +1,4 @@
+
 body{
     background-color: rgb(4, 4, 10);
 }
@@ -64,8 +65,7 @@ html{
     margin-top: 5%;
     margin-bottom: 5%;
     background-image: url("https://cdn-images.cure.fit/www-curefit-com/image/upload/c_fill,w_700,ar_1,q_auto:eco,dpr_2,f_auto,fl_progressive//image/test/gradient-circle/malibu-blur-circle.svg");
-    background-size:100%;  
-      
+    background-size:100%;   
 }
 #carousel>div{
     margin: auto;

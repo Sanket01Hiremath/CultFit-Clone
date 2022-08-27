@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* #one{
+            display: block;
+        }
+        #two,#thr{
+            display: none;
+        } */
+    </style>
+</head>
+<body>
+    <button id="le"><</button>
+    <button id="ri">></button>
+    <div id="main"></div>
+    <div id="one">1</div>
+    <div id="two">2</div>
+    <div id="thr">3</div>
+</body>
+<script>
+    let curr=1;
+    let div1=document.getElementById("one").innerHTML;
+    let div2=document.getElementById("two").innerHTML;
+    let div3=document.getElementById("thr").innerHTML;
+
+    let divs=[
+        div1,div2,div3
+    ]
+
+    setInterval(()=>{
+        rightclick();
+    },3000)
+    
+    // let right=document.getElementById("ri");
+    // right.addEventListener("click",()=>{
+    //     if(curr<divs.length){
+    //         curr++;
+    //         divs[curr-1].style.display="block";
+    //         divs[curr-2].style.display="none";
+    //     }else{
+    //         curr=1;
+    //         divs[curr-1].style.display="block";
+    //         divs[divs.length-1].style.display="none";
+    //     }
+        
+    // })
+
+    // let rightclick=()=>{
+    //     if(curr<divs.length){
+    //         curr++;
+    //         divs[curr-1].style.display="block";
+    //         divs[curr-2].style.display="none";
+    //     }else{
+    //         curr=1;
+    //         divs[curr-1].style.display="block";
+    //         divs[divs.length-1].style.display="none";
+    //     } 
+    // }
+    
+    let rightclick=()=>{
+        if(curr<divs.length){
+            curr++;
+            document.getElementById("main").innerHTML=divs[curr-1];
+            //divs[curr-2];
+        }else{
+            curr=1;
+            document.getElementById("main").innerHTML=divs[curr-1];
+            // divs[divs.length-1].style.display="none";
+        } 
+    }
+
+    // let left=document.getElementById("le");
+    // left.addEventListener("click",()=>{
+    //     if(curr>0){
+    //         curr--;
+    //         divs[curr].style.display="block";
+    //         divs[curr+1].style.display="none";
+    //     }else{
+    //         curr=divs.length;
+    //         divs[curr-1].style.display="block";
+    //         divs[0].style.display="none";
+    //     }
+    // })
+
+</script>
+</html>
