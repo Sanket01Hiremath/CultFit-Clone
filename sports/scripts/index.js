@@ -1246,3 +1246,14 @@ left9.onclick = () => {
     }
   }
 };
+
+let accBtn = document.getElementsByClassName("fa-angle-down");
+let down1 = document.getElementById("down1");
+// console.log(accBtn);
+accBtn[0].onclick = () => {
+  document.getElementById("acc_cont1").style.display = "inherit";
+};
+
+accBtn[1].onclick = () => {
+  document.getElementById("acc_cont2").style.display = "inherit";
+};

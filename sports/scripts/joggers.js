@@ -356,6 +356,37 @@ var joggers = [
     discount: "25% Off",
   },
 ];
+
+var slideshowArr = [
+  {
+    img: "https://cdn-images.cure.fit/www-curefit-com/image/upload/fl_progressive,f_auto,q_auto:eco,w_622,ar_1312:560/dpr_2/image/vm/4b0b7326-64f9-40ee-b5c7-3ce0b16a5d30.jpg",
+  },
+  {
+    img: "https://cdn-images.cure.fit/www-curefit-com/image/upload/fl_progressive,f_auto,q_auto:eco,w_622,ar_1312:560/dpr_2/image/vm/ec2b66b0-7892-464f-9241-c3cc488df2a9.jpg",
+  },
+  {
+    img: "https://cdn-images.cure.fit/www-curefit-com/image/upload/fl_progressive,f_auto,q_auto:eco,w_622,ar_1312:560/dpr_2/image/vm/78766d97-de52-4213-84bb-642afb28f724.jpg",
+  },
+];
+
+function slideshow(slideshowArr) {
+  let counter = 1;
+  let slidecontainer = document.getElementById("slideshow");
+  let img = document.createElement("img");
+  img.src = slideshowArr[0].img;
+  setInterval(() => {
+    img.src = slideshowArr[counter].img;
+    counter++;
+    if (counter == slideshowArr.length) {
+      counter = 0;
+    }
+  }, 4000);
+
+  slidecontainer.append(img);
+}
+
+slideshow(slideshowArr);
+
 let container = document.getElementById("container");
 
 function append(data, container) {

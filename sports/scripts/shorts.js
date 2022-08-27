@@ -358,6 +358,36 @@ var shorts = [
   },
 ];
 
+var slideshowArr = [
+  {
+    img: "https://cdn-images.cure.fit/www-curefit-com/image/upload/fl_progressive,f_auto,q_auto:eco,w_622,ar_1312:560/dpr_2/image/vm/4b7a5ed2-8034-4832-b7df-7163f7cbe4b0.png",
+  },
+  {
+    img: "https://cdn-images.cure.fit/www-curefit-com/image/upload/fl_progressive,f_auto,q_auto:eco,w_622,ar_1312:560/dpr_2/image/vm/33ebb433-3d2a-4122-8fc7-ab7c34845c5a.png",
+  },
+  {
+    img: "https://cdn-images.cure.fit/www-curefit-com/image/upload/fl_progressive,f_auto,q_auto:eco,w_622,ar_1312:560/dpr_2/image/vm/0773952c-5c27-4fa5-bb06-a7814e09b33d.png",
+  },
+];
+
+function slideshow(slideshowArr) {
+  let counter = 1;
+  let slidecontainer = document.getElementById("slideshow");
+  let img = document.createElement("img");
+  img.src = slideshowArr[0].img;
+  setInterval(() => {
+    img.src = slideshowArr[counter].img;
+    counter++;
+    if (counter == slideshowArr.length) {
+      counter = 0;
+    }
+  }, 4000);
+
+  slidecontainer.append(img);
+}
+
+slideshow(slideshowArr);
+
 function append(data, container) {
   data.forEach((ele) => {
     let div = document.createElement("div");

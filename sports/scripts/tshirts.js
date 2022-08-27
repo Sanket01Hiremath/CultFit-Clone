@@ -1266,6 +1266,36 @@ var mentshirt = [
   },
 ];
 
+var slideshowArr = [
+  {
+    img: "https://cdn-images.cure.fit/www-curefit-com/image/upload/fl_progressive,f_auto,q_auto:eco,w_622,ar_1312:560/dpr_2/image/vm/4a672b60-f376-4636-b6be-531bd152a136.jpg",
+  },
+  {
+    img: "https://cdn-images.cure.fit/www-curefit-com/image/upload/fl_progressive,f_auto,q_auto:eco,w_622,ar_1312:560/dpr_2/image/vm/b1b3b6cb-dcba-44ca-bd6c-321ddb6709e0.jpg",
+  },
+  {
+    img: "https://cdn-images.cure.fit/www-curefit-com/image/upload/fl_progressive,f_auto,q_auto:eco,w_622,ar_1312:560/dpr_2/image/vm/2d634fd9-c1ed-4f60-bc18-d2c512b103ef.jpg",
+  },
+];
+
+function slideshow(slideshowArr) {
+  let counter = 1;
+  let slidecontainer = document.getElementById("slideshow");
+  let img = document.createElement("img");
+  img.src = slideshowArr[0].img;
+  setInterval(() => {
+    img.src = slideshowArr[counter].img;
+    counter++;
+    if (counter == slideshowArr.length) {
+      counter = 0;
+    }
+  }, 4000);
+
+  slidecontainer.append(img);
+}
+
+slideshow(slideshowArr);
+
 let container = document.getElementById("container");
 
 function append(data, container) {
