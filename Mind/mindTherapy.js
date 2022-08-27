@@ -1,6 +1,9 @@
-document.getElementById("know").addEventListener(function(){
+document.getElementById("know").addEventListener("click",function(){
     window.location.href="knowMore.html";
 })
-document.getElementById("mind").addEventListener(function(){
+document.querySelector("#mind").addEventListener("click",function(){
     window.location.href="mindTherapy.html";
+})
+document.getElementById("ful").addEventListener("click",function(){
+    window.location.href="mindfulness.html";
 })
