@@ -8,13 +8,13 @@ html{
 
 #part_1{
     background-image: url("https://cdn-images.cure.fit/www-curefit-com/image/upload/c_fill,w_1600,ar_1.67,q_auto:eco,dpr_2,f_auto,fl_progressive/image/vm/9f3c54d5-d01f-457d-a29f-59f04d78cc48.png");
-    background-size:100%;
+    background-size:cover;
+    background-position: center;
     width:100%;
-    height:600px;
+    text-align: center;
 }
 #part_1>button{
     margin-top: 26%;
-    margin-left: 45%;
     font-size: 17px;
     font-weight: bold;
     padding:7px 15px;
@@ -29,8 +29,7 @@ html{
     justify-content: space-evenly;
     width:80%;
     margin: auto;
-    margin-top: 70px;
-    
+    margin-top: 70px; 
 }
 #passhighlights>div{
     text-align: center;
@@ -62,17 +61,18 @@ html{
 
 /* calousel divs */
 #carousel{
-    margin-top: 50px;
-    margin-bottom: 50px;
+    margin-top: 5%;
+    margin-bottom: 5%;
     background-image: url("https://cdn-images.cure.fit/www-curefit-com/image/upload/c_fill,w_700,ar_1,q_auto:eco,dpr_2,f_auto,fl_progressive//image/test/gradient-circle/malibu-blur-circle.svg");
-    background-size:100%;    
+    background-size:100%;  
+      
 }
 #carousel>div{
     margin: auto;
     width:60%;
     display:flex;
     justify-content: space-between;
-    padding: 5px 50px;
+    padding: 5px 5%;
     border:1px solid rgb(141, 141, 141);
     border-radius: 20px;
     background-color: rgb(86, 59, 5);
@@ -89,7 +89,7 @@ html{
     color: rgb(255, 255, 255);
 }
 #carousel>div>div:last-child{
-    margin-top: 30px;
+    margin-top: 3%;
     text-align: center;
     line-height: 2px;
 }
@@ -99,7 +99,7 @@ html{
 #carousel>div>div:last-child>div{
     display: flex;
     justify-content: space-evenly;
-    gap:10px;
+    gap:1%;
     line-height: 2px;
     text-align: center;
 }
@@ -115,9 +115,9 @@ html{
 #centers{
     margin: auto;
     width:80%;
-    padding:50px;
-    margin-top: 50px;
-    margin-bottom: 50px;
+    padding:5%;
+    margin-top: 5%;
+    margin-bottom: 5%;
 }
 #centers>div{
     display: flex;
@@ -183,9 +183,13 @@ html{
     display: flex;
     gap:20px;
     margin-top: 50px;
+    overflow: auto;
 }
 #slidescontainer1>div{
-    width:25%;
+    width:100%;
+}
+#slidescontainer1>div>img{
+    width:200px;
 }
 #slidescontainer1>div>button{
     position: relative;
@@ -196,6 +200,7 @@ html{
     display: flex;
     gap:20px;
     margin-top: 50px;
+    overflow: auto;
 }
 #slidescontainer2>div{
     border-radius: 10px;
@@ -204,7 +209,7 @@ html{
     padding-bottom: 20px;
 }
 #slidescontainer2>div>img{
-    width:100%;
+    width:300px;
     border-radius: 10px 10px 0px 0px;
 }
 .name,.level{
@@ -225,6 +230,8 @@ html{
     border: 0px;
     border-radius: 5px;
 }
+
+
 /* cultpasses */
 #cultpasses{
     width:80%;
@@ -232,6 +239,9 @@ html{
     text-align: center;
     margin-top: 50px;
     margin-bottom: 50px;
+}
+#cultpasses th>img{
+    width:50%;
 }
 #cultpasses>div>p:first-child{
     font-size: 50px;
@@ -259,7 +269,7 @@ td{
     color:rgb(169, 169, 169);
 }
 td>img{
-    width:20px;
+    width:10%;
 }
 
 /* Free Trials */
@@ -269,6 +279,7 @@ td>img{
     margin-top: 50px;
     margin-bottom: 50px;
     text-align: center;
+    overflow: auto;
 }
 #trials>p{
     font-size: 50px;
@@ -278,12 +289,14 @@ td>img{
 }
 #trials>div{
     display: flex;
-    justify-content: space-evenly;
     gap:20px;
 }
 #trials>div>div>button{
     position: relative;
     top:-50px;
+}
+#trials img{
+    width:300px;
 }
 /* elite pass & Pro pass */
 .passes{
@@ -293,8 +306,11 @@ td>img{
     padding: 50px;
 }
 .passes>div>img{
-    width:600px;
+    width:100%;
     border-radius: 20px;
+}
+.div1{
+    display: none;
 }
 .level1{
     color:white;
@@ -379,15 +395,19 @@ td>img{
     width:100%;
     background-image: url("https://cdn-images.cure.fit/www-curefit-com/image/upload/c_fill,w_1600,ar_2,q_auto:eco,dpr_2,f_auto,fl_progressive/image/vm/e33780ba-8a13-4254-b2f1-2b50be6273e0.svg");
     background-color: rgb(10, 10, 30);
-    background-size: 150%;
+    background-size: cover;
     background-position: center;
 }
 #cultcumminity>div{
-    width:500px;
+    width:100%;
+}
+#cultcumminity>div:first-child{
+    margin-left: 2%;
 }
 #cultcumminity>div:last-child>img{
     width:100%;
 }
+
 .lev{
     color:rgb(169, 169, 169);
     font-family: sans-serif;
@@ -452,4 +472,97 @@ td>img{
 }
 #faqs>div>div:last-child{
     display: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+@media all and (min-width:300px) and (max-width:900px){
+    #passhighlights{
+        display: none;
+        margin: auto;
+    }
+    #carousel>div>div:first-child>p:first-child{
+        font-size: 25px;
+    }
+    #carousel>div>div:first-child>p:last-child{
+        font-size: 10px;
+    }
+    #carousel>div h2{
+        font-size: 20px;
+    }
+    #centers{
+        text-align: center;
+    }
+    #slidescontainer1{
+        overflow: auto;
+    }
+    #slidescontainer2{
+        overflow: auto;
+    }
+    #cultpasses>div>p:first-child{
+        font-size: 40px;
+    }
+    #cultpasses>div>p:last-child{
+        font-size: 20px;
+    }
+    #trials>div{
+        overflow: auto;
+    }
+    .passes{
+        display: block;
+        text-align: center;
+    }
+    #livepass{
+        text-align: center;
+    }
+    #livepass>div:last-child{
+        top:0px;
+        width:100%;
+        text-align: center;
+    }
+    #livepass>div:last-child>p{
+        font-size: 30px;
+    }
+    .div1{
+        display: block;
+    }
+    .div2>p:first-child,.div2>p:nth-child(2){
+        display: none;
+    }
+    #culttransform{
+        margin-top: 50px;
+    }
+    #cultcumminity{
+        display: block;
+        text-align: center;
+    }
+}
+
+@media all and (min-width:300px) and (max-width:500px){
+    #carousel>div{
+        display: block;
+        text-align: center;
+    }
+    #cultpasses>div>p:first-child{
+        font-size: 25px;
+    }
+    #cultpasses>div>p:last-child{
+        font-size: 15px;
+    }
+    #livepass>div:last-child{
+        top:0px;
+        width:100%;
+    }
+    #livepass>div:last-child>p{
+        font-size: 20px;
+    }
 }

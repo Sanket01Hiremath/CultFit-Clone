@@ -66,8 +66,14 @@ body{
 #highlights>div:last-child{
     width:50%;
 }
+#highlights>div:last-child>img{
+    width:100%;
+}
 #highlights>div:first-child{
-    margin:20px;
+    margin:2%;
+}
+#highlights>div:first-child>img{
+    width:50%;
 }
 
 /* Features */
@@ -127,15 +133,16 @@ body{
     width:80%;
     margin: auto;
     margin-bottom: 100px;
+    
 }
 #trainers>div{
     display: flex;
-    justify-content: space-evenly;
     text-align: center;
     line-height: 5px;
+    overflow: auto;
 }
 #trainers>div>div>img{
-    width:100%;
+    width:300px;
 }
 
 /* elitepass */
@@ -182,4 +189,46 @@ body{
 }
 #elitepass>div>div>img{
     width:80px;
+}
+#features1{
+    display:none;
+}
+
+
+@media all and (min-width:400px) and (max-width:900px) {
+    #highlights{
+        display:block;
+        text-align: center;
+    }
+    #highlights>div:first-child{
+        display: none;
+    }
+    #highlights>div:last-child{
+        width:100%;
+    }
+    #features>div:nth-child(3){
+        display:none;
+    }
+    #features1{
+        display: block;
+    }
+    #features1>div>div{
+        display: flex;
+        justify-content: space-between;
+        row-gap: 20px;
+        width:70%;
+        margin: auto;
+        padding:5%;
+        background-color: rgba(128, 128, 128, 0.169);
+        border: 1px solid rgba(128, 128, 128, 0.401);
+        border-radius: 10px;
+    }
+    #elitepass>div:nth-child(3){
+        display: block;
+       
+    }
+    #elitepass>div:nth-child(3)>div{
+        margin: auto;
+        width:80%;
+    }
 }

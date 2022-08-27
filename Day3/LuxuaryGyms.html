@@ -19,8 +19,18 @@
     </style>
 </head>
 <body>
+    <div id="slidenavbar"></div>
     <div id="stickynavbar"></div>
     <div id="navbar"></div>
+    <div id="navbarmenu">
+        <div id="head">
+            <div>
+                <img src="https://static.cure.fit/assets/images/user-default.png" alt="">
+                <p id="user" class="level3">User</p>
+            </div>
+            <img id="navb2" src="https://cdn-icons-png.flaticon.com/128/5720/5720446.png" alt="">
+        </div>
+    </div>
     <div>
         <img width="100%" src="https://cdn-images.cure.fit/www-curefit-com/image/upload/fl_progressive,f_auto,q_auto:eco,w_1440,ar_2880:596/dpr_2/image/vm/c9c20c59-22da-444c-9a92-fb2c88850af3.jpg" alt="">
     </div>
@@ -38,9 +48,11 @@
     </div>
 </body>
 <script type="module">
-    import {nav1,nav2} from '../modules/navbar.js';
+    import {nav1,nav2,nav3} from '../modules/navbar.js';
     console.log(nav1,nav2)
     document.getElementById("stickynavbar").innerHTML=nav1();
     document.getElementById("navbar").innerHTML=nav2();
+    document.getElementById("slidenavbar").innerHTML=nav3()
 </script>
+<script src="../Day1/scripts/sidenavmenu.js"></script>
 </html>

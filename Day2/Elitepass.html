@@ -17,8 +17,18 @@
     </style>
 </head>
 <body>
+    <div id="slidenavbar"></div>
     <div id="stickynavbar"></div>
     <div id="navbar"></div>
+    <div id="navbarmenu">
+        <div id="head">
+            <div>
+                <img src="https://static.cure.fit/assets/images/user-default.png" alt="">
+                <p id="user" class="level3">User</p>
+            </div>
+            <img id="navb2" src="https://cdn-icons-png.flaticon.com/128/5720/5720446.png" alt="">
+        </div>
+    </div>
 
     <!-- top section -->
     <div id="highlights">
@@ -98,6 +108,26 @@
                     <p class="white25">SMART</p>
                     <p class="gold30">Workout plans</p>
                 </div>
+            </div>
+        </div>
+    </div>
+    <div id="features1">
+        <div>
+            <div>
+                <img width="30%" src="https://cdn-images.cure.fit/www-curefit-com/image/upload/c_fill,h_50,ar_2.14,q_auto:eco,dpr_2.000000037252903,f_auto,fl_progressive/image/test/glass-card-feature-mobile-widget/cult-pass-black/300-plus-v2.png" alt="">
+                <p class="white25">Elite and Pro Gyms</p>
+            </div>
+            <div>
+                <img width="30%" src="https://cdn-images.cure.fit/www-curefit-com/image/upload/c_fill,h_70,ar_2.03,q_auto:eco,dpr_2.000000037252903,f_auto,fl_progressive/image/test/glass-card-feature-mobile-widget/cult-pass-black/multiple-formats-v2.png" alt="">
+                <p class="white25">Multiple workout plans</p>
+            </div>
+            <div>
+                <img width="15%" src="https://cdn-images.cure.fit/www-curefit-com/image/upload/c_fill,h_70,ar_0.97,q_auto:eco,dpr_2.000000037252903,f_auto,fl_progressive/image/test/glass-card-feature-mobile-widget/cult-pass-black/diamond-star-v2.png" alt="">
+                <p class="white25">At home live Workout</p>
+            </div>
+            <div>
+                <img width="30%" src="https://cdn-images.cure.fit/www-curefit-com/image/upload/c_fill,h_50,ar_2.69,q_auto:eco,dpr_2.000000037252903,f_auto,fl_progressive/image/test/glass-card-feature-mobile-widget/cult-pass-black/audio-coach.png" alt="">
+                <p class="white25">Smart workout plans</p>
             </div>
         </div>
     </div>
@@ -398,10 +428,12 @@
 
 </body>
 <script type="module">
-    import {nav1,nav2} from '../modules/navbar.js';
-    console.log(nav1,nav2)
+    import {nav1,nav2,nav3} from '../modules/navbar.js';
+    console.log(nav1,nav2,nav3)
     document.getElementById("stickynavbar").innerHTML=nav1();
     document.getElementById("navbar").innerHTML=nav2();
+    document.getElementById("slidenavbar").innerHTML=nav3()
 </script>
 <script src="../test/timer.js"></script>
+<script src="../Day1/scripts/sidenavmenu.js"></script>
 </html>
