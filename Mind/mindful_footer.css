@@ -3,7 +3,7 @@
     height: auto;
     color: #cacaca;
     display: grid;
-    grid-template-columns: repeat(5, 350px 200px 100px 150px 250px);
+    grid-template-columns: repeat(5, 350px 200px 100px 150px 200px);
     gap: 60px;
     padding: 80px 80px;
     font-size: 16px;
@@ -18,9 +18,12 @@
     margin-bottom: 30px;
 }
 #d51{
-    width: 80%;
+    width: 10%;
     margin-left: 50px;
     
+}
+#d51>div>img{
+    width: 1000%;
 }
 #d51>div:nth-child(2){
     margin-top: 40px;
@@ -31,6 +34,10 @@
     display: flex;
     gap: 20px;
     margin: auto;
+}
+#d52>div>img{
+    width: 150%;
+    margin-left: 30px;
 }
 #footer{
     display: grid;
@@ -46,25 +53,4 @@
 }
 #dot{
     color: rgb(17, 18, 19);
-}
-
-@media all and (min-width : 481px) and (max-width : 768px){
-    #social{
-        grid-template-columns: repeat(5, 300px 150px 50px 100px 200px);
-        gap: 40px;
-        width: 154%;
-    }
-    #footer{
-        width:180%;
-    }
-}
-@media all and (min-width : 320px) and (max-width : 480px){
-    #social{
-        grid-template-columns: repeat(5, 120px 30px 40px 50px 100px);
-        gap: 40px;
-        width: 129%;
-    }
-    #footer{
-        width:170%;
-    }
 }
