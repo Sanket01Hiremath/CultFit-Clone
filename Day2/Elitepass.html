@@ -28,6 +28,7 @@
             </div>
             <img id="navb2" src="https://cdn-icons-png.flaticon.com/128/5720/5720446.png" alt="">
         </div>
+        <div id="body"></div>
     </div>
 
     <!-- top section -->
@@ -51,7 +52,7 @@
 
     <!-- import from day1 -->
     <div id="carousel">
-        <div>
+        <div style="background-image: linear-gradient(to bottom right, rgb(210, 161, 0), rgb(255, 218, 98), rgb(210, 161, 0));">
             <div>
                 <p>EXTRA 500 OFF + 3 MONTHS <br> EXTENSION</p>
                 <p>on cultpass ELITE</p>
@@ -81,7 +82,7 @@
     <!-- features -->
     <div id="features">
         <p  class="grey25">FEATURES</p>
-        <p style="line-height:5px;" class="white50">For an active lifestyle</p>
+        <p class="white50">For an active lifestyle</p>
         <div>
             <div>
                 <div>
@@ -382,57 +383,48 @@
         <div>
             <div>
                 <li class="lev2">What is cult?</li>
-                <img width="20px" height="10px" src="https://cdn-images.cure.fit/www-curefit-com/image/upload/c_fill,q_auto:eco,dpr_1.3125,f_auto,fl_progressive/image/test/Path.png" alt="">
-            </div>
-            <div>
                 <p class="lev3">At Cult, we make fitness fun and easy. We have best-in-class trainers & offer group workouts ranging from yoga to Boxing. Our workouts can be done both at a cult center and at home with the help of do it yourself (DIY) workout videos. Cult.fit uses the best in technology to give you a world-class experience. You can book classes, follow workout videos - all with the click of a button from the cult.fit app or website.</p>
             </div>
         </div>
         <div>
             <div>
                 <li class="lev2">What kind of workout formats are available at cult?</li>
-                <img width="20px" height="10px" src="https://cdn-images.cure.fit/www-curefit-com/image/upload/c_fill,q_auto:eco,dpr_1.3125,f_auto,fl_progressive/image/test/Path.png" alt="">
-            </div>
-            <div>
+        
                 <p class="lev3">At Cult, we make fitness fun and easy. We have best-in-class trainers & offer group workouts ranging from yoga to Boxing. Our workouts can be done both at a cult center and at home with the help of do it yourself (DIY) workout videos. Cult.fit uses the best in technology to give you a world-class experience. You can book classes, follow workout videos - all with the click of a button from the cult.fit app or website.</p>
             </div>
         </div>
         <div>
             <div>
                 <li class="lev2">How is the cult center different from a regular gym?</li>
-                <img width="20px" height="10px" src="https://cdn-images.cure.fit/www-curefit-com/image/upload/c_fill,q_auto:eco,dpr_1.3125,f_auto,fl_progressive/image/test/Path.png" alt="">
-            </div>
-            <div>
+                
                 <p class="lev3">At Cult, we make fitness fun and easy. We have best-in-class trainers & offer group workouts ranging from yoga to Boxing. Our workouts can be done both at a cult center and at home with the help of do it yourself (DIY) workout videos. Cult.fit uses the best in technology to give you a world-class experience. You can book classes, follow workout videos - all with the click of a button from the cult.fit app or website.</p>
             </div>
         </div>
         <div>
             <div>
                 <li class="lev2">What is cultpass ELITE?</li>
-                <img width="20px" height="10px" src="https://cdn-images.cure.fit/www-curefit-com/image/upload/c_fill,q_auto:eco,dpr_1.3125,f_auto,fl_progressive/image/test/Path.png" alt="">
-            </div>
-            <div>
+                
                 <p class="lev3">At Cult, we make fitness fun and easy. We have best-in-class trainers & offer group workouts ranging from yoga to Boxing. Our workouts can be done both at a cult center and at home with the help of do it yourself (DIY) workout videos. Cult.fit uses the best in technology to give you a world-class experience. You can book classes, follow workout videos - all with the click of a button from the cult.fit app or website.</p>
             </div>
         </div>
         <div>
             <div>
                 <li class="lev2">Are cult classes beginner friendly?</li>
-                <img width="20px" height="10px" src="https://cdn-images.cure.fit/www-curefit-com/image/upload/c_fill,q_auto:eco,dpr_1.3125,f_auto,fl_progressive/image/test/Path.png" alt="">
-            </div>
-            <div>
+                
                 <p class="lev3">At Cult, we make fitness fun and easy. We have best-in-class trainers & offer group workouts ranging from yoga to Boxing. Our workouts can be done both at a cult center and at home with the help of do it yourself (DIY) workout videos. Cult.fit uses the best in technology to give you a world-class experience. You can book classes, follow workout videos - all with the click of a button from the cult.fit app or website.</p>
             </div>
         </div>
     </div>
 
+    <div id="bottom"></div>
 </body>
 <script type="module">
-    import {nav1,nav2,nav3} from '../modules/navbar.js';
-    console.log(nav1,nav2,nav3)
+    import {nav1,nav2,nav3,body,compbtn} from '../modules/navbar.js';
     document.getElementById("stickynavbar").innerHTML=nav1();
     document.getElementById("navbar").innerHTML=nav2();
-    document.getElementById("slidenavbar").innerHTML=nav3()
+    document.getElementById("slidenavbar").innerHTML=nav3();
+    document.getElementById("body").innerHTML=body();
+    document.getElementById("bottom").innerHTML=compbtn();
 </script>
 <script src="../test/timer.js"></script>
 <script src="../Day1/scripts/sidenavmenu.js"></script>

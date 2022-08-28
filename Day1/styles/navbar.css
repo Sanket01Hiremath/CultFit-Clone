@@ -15,13 +15,14 @@
     background-color: rgb(0, 0, 0);
     position:relative;
     width:100%;
-    overflow: auto;
+    
 }
 #stickynavbar>div{
     display: flex;
-    justify-content: space-evenly;
-    gap:20px;
-    margin-left: 20px;
+    justify-content: space-between;
+    gap:10px;
+    margin-left: 10px;
+    margin-right: 10px;
     padding:10px 0px;
 }
 #stickynavbar>div>img{
@@ -50,6 +51,7 @@
 }
 #stickynavbar>a{
     padding:12px 20px;
+    
 }
 #stickynavbar>a>img{
     width:100px;
@@ -57,6 +59,7 @@
 #stickynavbar>div>a:hover{
     color: rgb(255, 255, 255);
     border-bottom: 1px solid white;
+    transition:2s;
 }
 #navbar{
     display: flex;
@@ -68,7 +71,7 @@
     top:0;
     width:100%;
     height:30px;
-    overflow: auto;
+    z-index: 100;
 }
 #navbar>a{
     text-decoration: none;
@@ -77,12 +80,14 @@
     font-size: 15px;
     font-weight: bold;
     border-radius: 5px;
-    padding:5px 10px
+    padding:5px 10px;
+    transition:0.5s;
 }
 #navbar>a:hover{
     background-color: grey;
     border-radius: 5px;
     padding:5px 10px
+    
 }
 #navbar>button{
     background-color:rgba(105, 105, 105, 0.535);
@@ -115,14 +120,16 @@
         align-items: center;
     }
     #navbarmenu{
-        display: none;
-        width:60%;
+        display: block;
+        width:0px;
         height:100%;
         background-color: rgba(33, 33, 33, 0.871);
         position: fixed;
         top:0px;
         left: 0px;
         z-index: 100;
+        transition: 0.5s;
+        overflow: hidden;
     }
     #head{
         display: flex;
@@ -142,9 +149,27 @@
     #body{
         margin-left: 30px;
     }
+    #body>a,#body>div>a{
+        text-decoration: none;
+    }
     #body>div{
-        display: none;
-        margin-left: 50px;
+        display: block;
+        height: 50px;
+        overflow: hidden;
+        transition: height 1s;
+        transition-timing-function: ease-out;
+    }
+    #fit:hover{
+        height: 230px;
+    }
+    #care:hover{
+        height: 80px;
+    }
+    #mind:hover{
+        height: 120px;
+    }
+    #body>div>li{
+        line-height: 25px;  
     }
     #navbar>a{
         font-size: 16px;

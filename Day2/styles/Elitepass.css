@@ -62,6 +62,11 @@ body{
     justify-content: space-between;
     gap:50px;
     padding-top: 0px;
+    /* Animation */
+    position: relative;
+    animation-name: example;
+    animation-duration: 1s;  
+    animation-fill-mode: forwards;
 }
 #highlights>div:last-child{
     width:50%;
