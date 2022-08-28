@@ -10,14 +10,18 @@ nav {
   justify-content: space-between;
   align-items: center;
   position: fixed;
+  z-index: 5;
 }
 
 #logo_container {
-  width: 120px;
+  width: 10%;
   min-height: fit-content;
   display: flex;
-  align-content: center;
+  justify-content: center;
+  align-items: center;
   cursor: pointer;
+  position: relative;
+  top: 10px;
 }
 
 #logo_container > img {
@@ -33,6 +37,7 @@ nav {
   margin-left: 100px;
   cursor: pointer;
   font-family: "Inter-Bold", "Roboto", sans-serif;
+  /* z-index: 5; */
 }
 
 #links > a {
