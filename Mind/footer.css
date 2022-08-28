@@ -50,19 +50,25 @@
 
 @media all and (min-width : 481px) and (max-width : 768px){
     #social{
-        grid-template-columns: repeat(5, 300px 150px 50px 100px 200px);
+        grid-template-columns: repeat(5, 200px 75px 50px 75px 150px);
         gap: 40px;
-        width: 154%;
+        width: 155%;
     }
     #footer{
         width:180%;
+    }
+    #d52>div>img{
+        width: 100%;
+        display: flex;
+        gap: 2px;
+        margin: auto;
     }
 }
 @media all and (min-width : 320px) and (max-width : 480px){
     #social{
         grid-template-columns: repeat(5, 120px 30px 40px 50px 100px);
         gap: 40px;
-        width: 129%;
+        width: 131%;
     }
     #footer{
         width:170%;

@@ -62,7 +62,7 @@ button:hover{
     #navbar{
         width: -10%;
         margin-top: -10px;
-        gap:20px;
+        gap:0px;
     }
     #navbar>div:first-child>img{
         width: 50%;
@@ -71,21 +71,27 @@ button:hover{
     }
     #navbar>div:nth-child(2){
         display: flex;
-        gap: 20px;
+        gap:10%;
         /* border: 2px solid white; */
         margin: auto;
-        margin-left: -40px;
+        margin-left: 10px;
+        width: 30%;
     }
     #navbar>div:nth-child(3){
         display: flex;
-        gap: 20px;
+        gap: 10%;
         /* border: 2px solid white; */
         margin-left:-60px;
+        width: 30%;
+    }
+    button{
+        padding: 0px 50px;
+        margin-top: 0px;
+        font-size: 16px;
     }
 }
 @media all and (min-width : 320px) and (max-width : 480px){
     #navbar{
-        /* width:100px; */
         margin-top: -10px;
         gap:10px;
     }
@@ -96,9 +102,23 @@ button:hover{
     }
     #navbar>div:nth-child(2){
         display: flex;
-        gap: 40px;
+        gap: 20px;
         /* border: 2px solid white; */
         margin: auto;
-        margin-left: -70px;
+        margin-left: -120px;
+        font-size: 16px;
+        width: 20%;
     }
+    #navbar>div:nth-child(3){
+        display: flex;
+        gap: 10px;
+        /* border: 2px solid white; */
+        margin-left:-60px;
+        width: 30%;
+    }
+    button{
+        padding: 0px 30px;
+        font-size: 12px;
+    }
+    
 }

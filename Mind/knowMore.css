@@ -4,20 +4,14 @@ img{
     margin-top: -4px;
 }
 @media all and (min-width : 481px) and (max-width : 768px){
-    #navbar{
-        padding: 30px;
-    }
     img{
-        width: 100%;
+        width: 179%;
         margin-top: -5px;
     }
 }
 @media all and (min-width : 320px) and (max-width : 480px){
-    #navbar{
-        padding: 30px;
-    }
     img{
-        width: 100%;
+        width: 170%;
         margin-top: -5px;
     }
 }
