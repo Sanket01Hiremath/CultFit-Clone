@@ -1,0 +1,61 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles/checkout.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div id="formdiv">
+      <h1>Checkout</h1>
+      <form action="">
+        <input
+          type="text"
+          name=""
+          id="name"
+          placeholder="Enter full name"
+          required
+        />
+        <input
+          type="number"
+          name=""
+          id="mobile"
+          placeholder="Enter  mobile number"
+          required
+        />
+        <input
+          type="email"
+          name=""
+          id="email"
+          placeholder="Enter email address"
+          required
+        />
+        <input
+          type="number"
+          name=""
+          id="pin"
+          placeholder="Enter pincode"
+          required
+        />
+        <input
+          type="address"
+          name=""
+          id="address"
+          placeholder="Enter street address"
+          required
+        />
+        <input type="submit" name="" id="" />
+      </form>
+    </div>
+  </body>
+</html>
+
+<script>
+  let form = document.querySelector("form");
+  form.addEventListener("submit", (event) => {
+    event.preventDefault();
+    alert("Your order has been placed successfully");
+    window.location.href = "index.html";
+  });
+</script>
