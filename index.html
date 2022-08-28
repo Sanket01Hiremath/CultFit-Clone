@@ -26,10 +26,10 @@
           />
         </div>
         <div id="links">
-          <a href=""><h5>FITNESS</h5></a>
-          <a href=""><h5>CARE</h5></a>
-          <a href=""><h5>MIND</h5></a>
-          <a href=""><h5>STORE</h5></a>
+          <a href="./Day1/fitness.html"><h5>FITNESS</h5></a>
+          <a href="./care/care.html"><h5>CARE</h5></a>
+          <a href="./Mind/mindTherapy.html"><h5>MIND</h5></a>
+          <a href="./sports/index.html"><h5>STORE</h5></a>
         </div>
         <div id="left_end">
           <div id="search_box">
@@ -238,7 +238,7 @@
 
       <!-- CULTPASS_laptopsize -->
       <div id="cultpass_container">
-        <a href="" class="pass_link">
+        <a href="./Day2/Elitepass.html" class="pass_link">
           <div id="elite_pass">
             <div class="pass_image">
               <img
@@ -259,7 +259,7 @@
             </div>
           </div>
         </a>
-        <a href="" class="pass_link">
+        <a href="./Day2/Propass.html" class="pass_link">
           <div id="pro_pass">
             <div class="pass_image">
               <img
@@ -278,7 +278,7 @@
             </div>
           </div>
         </a>
-        <a href="" class="pass_link">
+        <a href="./Day3/Livepass.html" class="pass_link">
           <div id="live_pass">
             <div class="pass_image">
               <img
@@ -304,7 +304,7 @@
       <div id="cultpass_main_container_mid">
         <h2>cultpass Memberships</h2>
         <div id="cultpass_container_mid">
-          <a href="">
+          <a href="./Day2/Elitepass.html">
             <div class="mid_pass_container">
               <div class="mid_pass_img_container">
                 <img
@@ -334,7 +334,7 @@
               </div>
             </div>
           </a>
-          <a href="">
+          <a href="./Day2/Propass.html">
             <div class="mid_pass_container">
               <div class="mid_pass_img_container">
                 <img
@@ -361,7 +361,7 @@
               </div>
             </div>
           </a>
-          <a href="">
+          <a href="./Day3/Livepass.html">
             <div class="mid_pass_container">
               <div class="mid_pass_img_container">
                 <img
@@ -496,7 +496,7 @@
               <a href=""><button>TRY FOR FREE</button></a>
             </div>
             <div class="button_two">
-              <a href=""><button>LEARN MORE</button></a>
+              <a href="./Day2/Elitepass.html"><button>LEARN MORE</button></a>
             </div>
           </div>
         </div>
@@ -543,7 +543,7 @@
               <a href=""><button>TRY FOR FREE</button></a>
             </div>
             <div class="button_two">
-              <a href=""><button>LEARN MORE</button></a>
+              <a href="./Day2/Propass.html"><button>LEARN MORE</button></a>
             </div>
           </div>
         </div>
@@ -592,7 +592,7 @@
               <a href=""><button>TRY FOR FREE</button></a>
             </div>
             <div class="button_two">
-              <a href=""><button>LEARN MORE</button></a>
+              <a href="./Day3/Livepass.html"><button>LEARN MORE</button></a>
             </div>
           </div>
         </div>
@@ -602,7 +602,7 @@
 
       <div id="grid_img_main_logo_container">
         <div id="grid_img_sub_container">
-          <div class="grid_container">
+          <div onclick="cultTrans()" class="grid_container">
             <div class="image_container">
               <img
                 src="https://cdn-images.cure.fit/www-curefit-com/image/upload/c_fill,w_400,ar_1.164,q_auto:eco,dpr_1,f_auto,fl_progressive//image/test/four-square-card/cult-transform-glass-green.png"
@@ -646,14 +646,14 @@
               </div>
             </div>
           </div>
-          <div class="grid_container">
+          <div onclick="cultSport()" class="grid_container">
             <div class="image_container">
               <img
                 src="https://cdn-images.cure.fit/www-curefit-com/image/upload/c_fill,w_400,ar_1.164,q_auto:eco,dpr_1,f_auto,fl_progressive//image/test/four-square-card/glass-workout-gear.png"
                 alt=""
               />
             </div>
-            <div class="detailes_container">
+            <div  class="detailes_container">
               <div class="detail_container_top">
                 <div><h3>Workout Gear</h3></div>
                 <div>
@@ -934,3 +934,11 @@
   </body>
 </html>
 <script src="index.js"></script>
+<script>
+  let cultTrans=()=>{
+    window.location.href="./Day3/culttransform.html"
+  }
+  let cultSport=()=>{
+    window.location.href="./sports/index.html"
+  }
+</script>

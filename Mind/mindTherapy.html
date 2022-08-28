@@ -13,13 +13,13 @@
 <body>
     <div id="navbar">
         <div>
-            <img src="https://cdn-images.cure.fit/www-curefit-com/image/upload/c_fill,w_120,ar_3.87,q_auto:eco,dpr_2,f_auto,fl_progressive//image/test/brand-logo/vman-and-white-cult-text.png" alt="logo">
+            <img id="logo" src="https://cdn-images.cure.fit/www-curefit-com/image/upload/c_fill,w_120,ar_3.87,q_auto:eco,dpr_2,f_auto,fl_progressive//image/test/brand-logo/vman-and-white-cult-text.png" alt="logo">
         </div>
         <div>
-            <div>FITNESS</div>
-            <div>CARE</div>
+            <div id="fit">FITNESS</div>
+            <div id="care">CARE</div>
             <div id="mind">MIND</div>
-            <div>STORE</div>
+            <div id="store">STORE</div>
         </div>
         <div>
             <div>PUNE</div>
@@ -402,3 +402,17 @@
 </body>
 </html>
 <script src="mindTherapy.js"></script>
+<script>
+    document.getElementById("logo").addEventListener("click",()=>{
+        window.location.href="../index.html"
+    })
+    document.getElementById("fit").addEventListener("click",()=>{
+        window.location.href="../Day1/fitness.html"
+    })
+    document.getElementById("care").addEventListener("click",()=>{
+        window.location.href="../care/care.html"
+    })
+    document.getElementById("store").addEventListener("click",()=>{
+        window.location.href="../sports/index.html"
+    })
+</script>

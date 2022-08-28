@@ -1,5 +1,5 @@
 let relativeNavbar=()=>{
-    return `<a href="../navbar.html"><img src="https://cdn-images.cure.fit/www-curefit-com/image/upload/c_fill,w_120,ar_3.87,q_auto:eco,dpr_1.3125,f_auto,fl_progressive//image/test/brand-logo/vman-and-white-cult-text.png" alt=""></a>
+    return `<a href="../index.html"><img src="https://cdn-images.cure.fit/www-curefit-com/image/upload/c_fill,w_120,ar_3.87,q_auto:eco,dpr_1.3125,f_auto,fl_progressive//image/test/brand-logo/vman-and-white-cult-text.png" alt=""></a>
     <div>
     <a href="../Day1/fitness.html">FITNESS</a>
     <a href="../Mind/mindTherapy.html">MIND</a>
@@ -35,7 +35,7 @@ let sidenavmenu=()=>{
 
 let sidenavmenubody=()=>{
     return `
-    <a href="../navbar.html"><p class="level3">Home</p></a>
+    <a href="../index.html"><p class="level3">Home</p></a>
     <div id="fit">
         <p class="level3">Fitness</p>
         <li><a class="greylink20" href="../Day1/fitness.html">cultpass</a></li>
