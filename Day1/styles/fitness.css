@@ -210,11 +210,10 @@ html{
 }
 #slidescontainer1>div>img:hover{
     width:220px;
-    transition-duration:0.5s;
-    transition-timing-function: ease;
 }
 #slidescontainer1>div>img{
     width:200px;
+    transition: 0.5s;
 }
 #slidescontainer1>div>button{
     position: relative;
@@ -235,7 +234,7 @@ html{
 }
 #slidescontainer2>div:hover{
     border:1px solid silver;
-    transition-duration:0.5s;
+    transition: 0.5s;
     transition-timing-function: ease;
 }
 #slidescontainer2>div>img{
@@ -327,11 +326,10 @@ td>img{
 }
 #trials img{
     width:300px;
+    transition:0.5s;
 }
 #trials img:hover{
     width:320px;
-    transition-duration:0.5s;
-    transition-timing-function: ease;
 }
 /* elite pass & Pro pass */
 .passes{
