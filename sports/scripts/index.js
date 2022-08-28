@@ -1,6 +1,6 @@
 let cartArr = JSON.parse(localStorage.getItem("cart")) || [];
 
-import navbar from "/dusty-hat-6390/sports/components/navbar.js";
+import navbar from "../components/navbar.js";
 let navbarcont = document.getElementById("navbar");
 navbarcont.innerHTML = navbar();
 
