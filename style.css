@@ -4,7 +4,7 @@
   box-sizing: border-box;
 }
 body {
-  background-color: rgb(26, 24, 27);
+  background-color: #171a26;
   font-family: "Inter-Bold", "Roboto", sans-serif;
   overflow-x: hidden;
 }
@@ -56,15 +56,13 @@ main {
   top: 30vh;
 }
 
-#left_image,
-#right_image {
-  width: calc(75% / 2);
-}
-
 #mid_image {
   width: 25%;
   display: flex;
   align-items: center;
+  display: block;
+  margin: auto;
+  margin-top: 140px;
 }
 
 #mid_image > img {
@@ -72,61 +70,102 @@ main {
   z-index: 1;
 }
 
+#left_image {
+  width: calc(77% / 2);
+  position: absolute;
+  left: 1px;
+  top: -70px;
+}
+
 #left_svg_top {
-  width: 127%;
+  width: 100%;
+  overflow-x: hidden;
+}
+
+#left_svg_top > svg {
+  width: 140%;
   position: relative;
-  right: 22%;
-  top: 7%;
+  left: -40%;
 }
 
 #left_svg_bottom {
-  width: 127%;
+  width: 100%;
+  overflow-x: hidden;
+  margin-top: -6px;
+}
+
+#left_svg_bottom > svg {
+  width: 140%;
   position: relative;
-  right: 25%;
-  top: 7%;
+  left: -40%;
+}
+
+#right_image {
+  width: calc(77% / 2);
+  position: absolute;
+  right: 0.1%;
+  top: -101%;
+  z-index: -1;
 }
 
 #right_svg_top {
-  width: 130%;
+  width: 100%;
   position: relative;
-  bottom: 19%;
-  right: 13%;
+  overflow: hidden;
+}
+
+#right_svg_top > svg {
+  width: 160%;
 }
 
 #righ_svg_bottom {
-  width: 130%;
+  width: 100%;
   position: relative;
-  bottom: 18%;
-  right: 5%;
+  overflow: hidden;
+  right: 1%;
+  margin-top: 15px;
+}
+
+#right_svg_bottom > svg {
+  width: 160%;
 }
 
 @media all and (min-width: 481px) and (max-width: 768px) {
   #mid_image {
-    margin-top: 230px;
+    margin-top: 320px;
     width: 33%;
   }
 
-  #left_image,
-  #right_image {
-    margin-top: 230px;
-    width: calc(67% / 2);
+  #left_image {
+    top: 55%;
   }
 
-  #left_svg_top {
-    top: 18%;
-    right: 23%;
+  #left_svg_top > svg {
+    left: -50%;
   }
   #left_svg_bottom {
     top: -5%;
-    right: 23%;
+    margin-top: -85px;
   }
+  #left_svg_bottom > svg {
+    left: -48%;
+  }
+
+  #right_image {
+    top: 46%;
+  }
+
   #right_svg_top {
     bottom: -20%;
-    right: 10%;
   }
   #righ_svg_bottom {
     bottom: 15%;
-    right: 6%;
+
+    margin-top: -100px;
+  }
+  #righ_svg_bottom > svg {
+    position: relative;
+    right: -10%;
   }
 }
 
@@ -136,29 +175,36 @@ main {
     width: 60%;
   }
 
-  #left_image,
-  #right_image {
-    margin-top: 140px;
-    width: calc(40% / 2);
+  #left_image {
+    top: 40%;
   }
 
-  #left_svg_top {
-    width: 400%;
-    top: -12%;
-    right: 270%;
+  #left_svg_top > svg {
+    width: 160%;
+    left: -95%;
   }
   #left_svg_bottom {
-    width: 400%;
-    top: -20%;
-    right: 270%;
+    margin-top: -20px;
   }
-  #right_svg_top {
-    bottom: -36%;
-    right: 10%;
+  #left_svg_bottom > svg {
+    width: 160%;
+    left: -95%;
+  }
+  #right_image {
+    top: 34%;
+  }
+
+  #right_svg_top > svg {
+    position: relative;
+    left: 50px;
   }
   #righ_svg_bottom {
-    bottom: -36%;
-    right: 6%;
+    margin-top: -15px;
+  }
+  #righ_svg_bottom > svg {
+    width: 140%;
+    position: relative;
+    left: 60px;
   }
 }
 /* video over image */
@@ -244,5 +290,709 @@ main {
   #button_pass {
     width: 60%;
     margin: auto;
+  }
+}
+
+/* cULTPASS */
+
+#cultpass_container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 23px;
+  width: 70%;
+  margin: 50px auto;
+}
+
+.pass_link {
+  text-decoration: none;
+  color: rgb(255 255 255 / 60%);
+  font-size: 14px;
+  text-align: center;
+  background: rgb(255 255 255 / 5%);
+  padding: 15px 0 10px 0;
+  border-radius: 10px;
+}
+
+.pass_link:hover {
+  background: rgb(255 255 255 / 10%);
+}
+
+.pass_image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.pass_image > img {
+  width: 35%;
+}
+
+.pass_tag {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px 0 15px 0;
+}
+.pass_tag > img {
+  width: 30%;
+}
+
+.paragraph {
+  width: 52%;
+  margin: auto;
+  line-height: 22px;
+}
+
+#cultpass_main_container_mid {
+  display: none;
+}
+
+@media all and (max-width: 768px) {
+  #cultpass_container {
+    display: none;
+  }
+  #cultpass_main_container_mid {
+    display: block;
+    margin-top: 180px;
+  }
+  #cultpass_main_container_mid > h2 {
+    color: rgb(255 255 255 / 80%);
+    display: block;
+    text-align: center;
+    width: 85%;
+    margin: auto;
+    font-size: 18px;
+  }
+  #cultpass_container_mid {
+    display: grid;
+    grid-column: auto;
+    grid-template-rows: repeat(3, 1fr);
+    row-gap: 15px;
+    width: 85%;
+    margin: auto;
+    margin-top: 30px;
+  }
+  #cultpass_container_mid > a {
+    text-decoration: none;
+    color: rgb(255 255 255 / 80%);
+    background: rgb(255 255 255 / 5%);
+    padding: 20px 30px;
+    border-radius: 10px;
+  }
+  .mid_pass_container {
+    display: grid;
+    grid-template-columns: 18% 72%;
+    gap: 20px;
+  }
+
+  .mid_pass_img_container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .mid_pass_img_container > img {
+    width: 100%;
+  }
+  .mid_image_pass {
+    display: flex;
+    margin-top: 7px;
+  }
+  .mid_cult_pass_img_container {
+    width: 18%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .mid_cult_pass_img_container > img {
+    width: 100%;
+  }
+  .mid_elite_pass_img_container {
+    width: 8%;
+    margin-left: 5px;
+  }
+  .mid_elite_pass_img_container > img {
+    width: 100%;
+  }
+  .detail_pass_container > p {
+    font-size: 12px;
+    letter-spacing: 0px;
+    line-height: 16px;
+    margin-top: 7px;
+  }
+  #pass_background_img {
+    width: 85%;
+    height: 150px;
+    margin: auto;
+    margin-top: -10%;
+    overflow: hidden;
+    z-index: -1;
+    opacity: 75%;
+  }
+  #pass_background_img > img {
+    width: 100%;
+  }
+}
+
+@media all and (max-width: 480px) {
+  .mid_pass_container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .mid_pass_img_container {
+    width: 65%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .mid_pass_img_container > img {
+    width: 100%;
+  }
+  .mid_cult_pass_img_container {
+    width: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .mid_elite_pass_img_container {
+    width: 14%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  #pass_background_img {
+    margin-top: -30%;
+    position: relative;
+    right: -70%;
+  }
+}
+
+/* transiction effects */
+
+#top_images_container {
+  display: flex;
+  width: 85%;
+  margin: auto;
+  justify-content: space-between;
+}
+
+#first_top_img_container {
+  width: 42%;
+  opacity: 1;
+  /* transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1); */
+}
+
+#second_top_img_container {
+  width: 42%;
+  margin-top: 50px;
+}
+
+#first_top_img_container > img,
+#second_top_img_container > img {
+  width: 100%;
+}
+
+#bottom_images_container {
+  display: flex;
+  justify-content: space-between;
+}
+
+#first_bottom_img_container {
+  width: 30%;
+  opacity: 1;
+}
+
+#second_bottom_img_container {
+  width: 30%;
+  margin-top: 350px;
+}
+#third_bottom_img_container {
+  width: 30%;
+}
+
+#first_bottom_img_container > img,
+#second_bottom_img_container > img,
+#third_bottom_img_container > img {
+  width: 100%;
+}
+
+/* CULTPASS */
+
+#cult_pass_heading_img {
+  width: 17%;
+  margin: auto;
+  margin-top: 50px;
+}
+#cult_pass_heading_img > img {
+  width: 100%;
+}
+
+#learnmore_container {
+  width: 10%;
+  margin: auto;
+  text-align: center;
+  margin-top: 40px;
+  margin-bottom: 30px;
+}
+
+#learn_more > button {
+  padding: 5px 9px;
+  background: transparent;
+  border: none;
+  color: #337ab7;
+  font-size: 14px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+#learn_more > button:hover {
+  background-color: rgba(0, 0, 0, 0.12);
+}
+
+#big_cult_pass_container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 40px;
+  width: 85%;
+  margin: auto;
+  color: white;
+}
+
+.big_img_main_container {
+  cursor: pointer;
+}
+
+.big_cult_pass_sub_container {
+  display: flex;
+  flex-direction: column;
+}
+
+.big_img_container > img {
+  width: 100%;
+  transition: transform 0.5s;
+}
+.big_img_container:hover {
+  transform: scale(1.03);
+}
+.small_img_main_container {
+  position: relative;
+  width: 30%;
+  top: -85px;
+  left: 25px;
+}
+
+.small_img_one {
+  width: 70%;
+}
+.small_img_one > img {
+  width: 100%;
+  margin-bottom: 3px;
+}
+
+.small_img_two > img {
+  width: 100%;
+}
+
+.information {
+  margin-top: -45px;
+  padding: 3px;
+}
+
+.information > h5 {
+  font-size: x-large;
+  margin-bottom: 15px;
+}
+
+.list {
+  display: flex;
+  margin-left: -25px;
+}
+
+.dot {
+  display: flex;
+  width: 15%;
+  justify-content: center;
+  align-items: center;
+}
+.dot > p {
+  display: block;
+  width: 50px;
+  text-align: center;
+  font-size: 50px;
+  position: relative;
+  bottom: 20px;
+}
+.note {
+  font-size: larger;
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+}
+
+.buttons {
+  margin-top: 50px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.button_one > a > button,
+.button_two > a > button {
+  padding: 12px 35px;
+  border-radius: 5px;
+  font-size: 14px;
+  border: none;
+  cursor: pointer;
+}
+
+.button_one > a > button {
+  background: rgb(255 255 255 / 10%);
+  color: white;
+}
+.button_one > a > button:hover {
+  background: rgb(255 255 255 / 20%);
+}
+
+.button_two > a > button {
+  color: #f06055;
+}
+.button_two > a > button:hover {
+  color: #171a26;
+}
+
+/* grid-container */
+
+#grid_img_main_logo_container {
+  margin: auto;
+  margin-top: 120px;
+  width: 80%;
+}
+
+#grid_img_sub_container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  text-align: center;
+  column-gap: 20px;
+  row-gap: -5px;
+}
+.grid_container {
+  cursor: pointer;
+  transition: transform 0.5s;
+}
+
+.grid_container:hover {
+  transform: scale(1.03);
+}
+
+.image_container {
+  width: 90%;
+  margin: auto;
+}
+.image_container > img {
+  width: 100%;
+}
+
+.detailes_container {
+  position: relative;
+  bottom: 80%;
+  width: 80%;
+  margin: auto;
+}
+.detail_container_top {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.detail_container_top div > h3 {
+  color: white;
+  font-size: 30px;
+  text-align: left;
+  letter-spacing: 0.01px;
+  line-height: 38px;
+}
+
+.detail_container_top > div + div {
+  width: 8%;
+}
+
+.detail_container_top > div + div > img {
+  width: 100%;
+}
+
+.detail_container_bottom {
+  text-align: left;
+  color: #cacaca;
+  font-size: 18px;
+  letter-spacing: 0px;
+  line-height: 22px;
+}
+
+/* ADVERTISEMENT_ONE */
+
+#advertisement {
+  width: 76%;
+  margin: auto;
+  margin-bottom: 70px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 25px;
+  border: none;
+  position: relative;
+  background-position: right center;
+  background-image: url(https://cdn-images.cure.fit/www-curefit-com/image/upload/c_fill,w_1200,ar_2.66,q_auto:eco,dpr_1,f_auto,fl_progressive//image/test/download-app/download-app-variant-2.png);
+}
+
+#advertisment_sub_container {
+  padding: 40px;
+}
+
+#advertisment_sub_container > h3 {
+  text-align: start;
+  color: white;
+  font-size: 30px;
+  letter-spacing: 0.01px;
+  line-height: 38px;
+  margin-bottom: 4%;
+  width: 40%;
+}
+
+#advertisment_sub_container > h3 + div {
+  text-align: start;
+  width: 40%;
+  margin: 0;
+  color: rgb(255 255 255 / 80%);
+  font-size: 18px;
+  letter-spacing: 0px;
+  line-height: 22px;
+  margin-bottom: 8.5%;
+}
+
+#download_img {
+  display: flex;
+  justify-content: space-between;
+  width: 35%;
+  margin-top: 80px;
+}
+
+#download_img > a {
+  transition: transform 0.5s;
+}
+
+#download_img > a:hover {
+  transform: scale(1.03);
+}
+
+#download_img > a > div > img {
+  width: 95%;
+}
+/* Job_heading */
+
+#job_heading_container {
+  width: 76%;
+  margin: auto;
+  margin-bottom: 70px;
+}
+#job_heading_container > h1 {
+  text-align: center;
+  color: white;
+  font-size: 70px;
+  letter-spacing: -1px;
+  line-height: 84px;
+  margin-bottom: 6%;
+}
+
+#job_cards_container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 25px;
+  text-align: center;
+}
+.job_cards {
+  padding: 20px 40px 25px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 30px;
+  border: none;
+  height: 100%;
+  background-position: center center;
+  background-image: url(https://cdn-images.cure.fit/www-curefit-com/image/upload/c_fill,w_600,q_auto:eco,dpr_1,f_auto,fl_progressive//image/test/join-the-cult/career-at-cult.png);
+  transition: transform 0.5s;
+}
+.job_cards:hover {
+  transform: scale(1.03);
+}
+.job_cards > a {
+  text-decoration: none;
+}
+
+#job_sub_cards_one > h3 {
+  color: white;
+  font-size: 40px;
+  letter-spacing: 0.01px;
+  line-height: 60px;
+  margin-bottom: 6%;
+}
+
+.job_sub_cards > div > img {
+  width: 100%;
+}
+
+.job_button > button {
+  border: 1px solid transparent;
+  transition: all 250ms ease;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #3888ff;
+  background: transparent;
+  font-size: 12px;
+  line-height: 12px;
+  border-radius: 5px;
+  padding: 7px 15px;
+  font-weight: 700;
+  margin: auto;
+}
+
+.job_button > button:hover {
+  background: rgba(0, 0, 0, 0.12);
+}
+
+#job_sub_cards_two > h3:nth-child(1) {
+  color: white;
+  font-size: 40px;
+  letter-spacing: 0.01px;
+  line-height: 60px;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  background-image: linear-gradient(115deg, #f8ba00 12%, #ef5fa7 80%);
+  margin: auto;
+  max-width: 400px;
+}
+
+#job_sub_cards_two > h3:nth-child(2) {
+  text-align: center;
+  color: white;
+  font-size: 40px;
+  letter-spacing: 0.01px;
+  line-height: 60px;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  background-image: linear-gradient(115deg, #f8ba00 12%, #ef5fa7 80%);
+  margin: auto;
+  max-width: 400px;
+}
+
+#job_sub_cards_two > h5 {
+  text-align: center;
+  margin: auto;
+  color: white;
+  font-size: 22px;
+  letter-spacing: -0.3px;
+  line-height: 35px;
+  margin-top: 10%;
+  margin-bottom: 7%;
+}
+
+/* FOOTER_TOP */
+
+#footer_top {
+  height: 47vw;
+  min-height: 500px;
+  width: 100vw;
+  background-size: 100% 100%;
+  background-image: url(https://cdn-images.cure.fit/www-curefit-com/image/upload/c_fill,w_1000,ar_2.16,q_auto:eco,dpr_2,f_auto,fl_progressive//image/test/we_are_cult_new.svg);
+}
+
+#footer_top > div {
+  width: 33%;
+  float: right;
+  margin-top: 10%;
+  margin-right: 7vw;
+}
+#footer_top > div > h5,
+#footer_top > div > div {
+  text-align: left;
+  margin: 0;
+  color: rgb(255 255 255 / 70%);
+  font-size: 22px;
+  letter-spacing: -0.3px;
+  line-height: 35px;
+}
+
+/* FOOTER */
+
+#social {
+  background-color: #000;
+  height: auto;
+  color: #cacaca;
+  display: grid;
+  grid-template-columns: 300px 200px 80px 150px 200px;
+  gap: 20px;
+  padding: 80px 80px;
+  font-size: 16px;
+  font-family: Inter-Regular, Helvetica Neue, Helvetica, Roboto, Arial,
+    sans-serif;
+  line-height: 1.5;
+}
+#social > #d2 > div,
+#social > #d3 > div,
+#social > #d4 > div {
+  margin-bottom: 40px;
+}
+#logo {
+  width: 60%;
+  margin-bottom: 30px;
+}
+#d51 {
+  width: 80%;
+  margin-left: 50px;
+}
+#d51 > div:nth-child(2) {
+  margin-top: 40px;
+  margin-bottom: 60px;
+}
+#d52 {
+  width: 100%;
+  display: flex;
+  gap: 20px;
+  margin: auto;
+}
+#footer {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  color: rgb(162, 162, 162);
+  background-color: rgb(17, 18, 19);
+  padding: 60px 0px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 14px;
+  letter-spacing: 0.3;
+  line-height: 1.5;
+  padding-left: 2px;
+}
+#dot {
+  color: rgb(17, 18, 19);
+}
+@media all and (min-width: 481px) and (max-width: 768px) {
+  #social {
+    grid-template-columns: repeat(5, 300px 150px 50px 100px 200px);
+    gap: 40px;
+    width: 154%;
+  }
+  #footer {
+    width: 180%;
+  }
+}
+@media all and (min-width: 320px) and (max-width: 480px) {
+  #social {
+    grid-template-columns: repeat(5, 120px 30px 40px 50px 100px);
+    gap: 40px;
+    width: 129%;
+  }
+  #footer {
+    width: 170%;
   }
 }
