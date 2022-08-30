@@ -195,7 +195,7 @@ var sweatshirt = [
 ];
 
 document.getElementById("logo").addEventListener("click", () => {
-  window.location.href = "/dusty-hat-6390/sports/index.html";
+  window.location.href = "/sports/index.html";
 });
 
 function append(data, container) {
