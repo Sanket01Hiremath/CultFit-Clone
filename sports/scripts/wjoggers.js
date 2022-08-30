@@ -2,6 +2,10 @@ import navbar from "../components/navbar.js";
 let navbarcont = document.getElementById("navbar");
 navbarcont.innerHTML = navbar();
 
+document.getElementById("logo").addEventListener("click", () => {
+  window.location.href = "/dusty-hat-6390/sports/index.html";
+});
+
 var slideshowArr = [
   {
     img: "https://cdn-images.cure.fit/www-curefit-com/image/upload/fl_progressive,f_auto,q_auto:eco,w_622,ar_1312:560/dpr_2/image/vm/d11fc9b7-1d1e-4afa-9523-5ff72fe3e23a.png ",

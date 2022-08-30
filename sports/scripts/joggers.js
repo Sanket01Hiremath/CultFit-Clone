@@ -2,6 +2,10 @@ import navbar from "../components/navbar.js";
 let navbarcont = document.getElementById("navbar");
 navbarcont.innerHTML = navbar();
 
+document.getElementById("logo").addEventListener("click", () => {
+  window.location.href = "/dusty-hat-6390/sports/index.html";
+});
+
 var joggers = [
   {
     Image:

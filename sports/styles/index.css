@@ -16,6 +16,10 @@
   z-index: 10;
 }
 
+#logo > img {
+  width: 150px;
+}
+
 #logo > div {
   /* padding: 10px 0px; */
   width: 135px;

@@ -1,12 +1,11 @@
 function navbar() {
-  return `<a href="/dusty-hat-6390/sports/index.html" id="logo">
-  <div>
+  return `
+  <div id="logo">
     <img
       src="https://cdn-images.cure.fit/www-curefit-com/image/upload/c_fill,w_135,ar_3.87,q_auto:eco,dpr_2,f_auto,fl_progressive//image/test/brand-logo/cultsport-black-logo.svg"
       alt=""
     />
   </div>
-</a>
 <div style="margin-top: 5px" id="main-div1">
   <h3 class="anchor_text">Men Sportswear</h3>
   <div id="men_div">

@@ -194,6 +194,10 @@ var sweatshirt = [
   },
 ];
 
+document.getElementById("logo").addEventListener("click", () => {
+  window.location.href = "/dusty-hat-6390/sports/index.html";
+});
+
 function append(data, container) {
   data.forEach((ele) => {
     let div = document.createElement("div");
